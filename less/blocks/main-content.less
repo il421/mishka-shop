@@ -1,0 +1,34 @@
+.main-content {
+  .container();
+  height: 105px;
+
+  &--dark {
+    background-color: @block-color;
+  };
+
+  &--light {
+    background-color: darken(@block-color, 10%);
+  };
+
+  &--grey {
+      background-color: @extra-backgroung-color;
+  };
+};
+
+.main-content__title {
+  font-family: @main-fonts;
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 30px;
+  color: @black-text-color;
+  text-align: center;
+  text-decoration: none;
+
+  padding: 0 30px;
+
+  &--white {
+    color: @white-text-color;
+    font-size: 19px;
+    line-height: 24px;
+  };
+};
