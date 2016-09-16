@@ -2,20 +2,20 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="less/style.less" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>Интернет магазин "Мишка"</title>
   </head>
   <body>
-    <header class="main-header">
+    <header class="page-header">
       <a class="page-header__logo">
-        <img src="#" width="100" height="100" alt="Интернет магазин Мишка">
+        <img src="img\logo-mobile.svg" width="86" height="35" alt="Интернет магазин Мишка">
       </a>
       <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
-            <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+            <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+            <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
             <li class="main-nav__item main-nav__item--search"><a href="#">Поиск по сайту</a></li>
             <li class="main-nav__item main-nav__item--chart"><a href="#">Корзина: пока пуста</a></li>
           </ul>
@@ -23,12 +23,14 @@
       </nav>
     </header>
     <main>
-      <h1 class="main-title">Милые штуки ручной работы для дома</h1>
-      <div class="main-content--dark">
-        <a href="#" class="main-content__title--white">Предметы интерьера</a>
+      <div class="main-banner">
+        <h1 class="main-banner__title">Милые штуки ручной работы для дома</h1>
       </div>
-      <div class="main-content--light">
-        <a href="#" class="main-content__title--white">Детские игрушки</a>
+      <div class="main-content main-content--dark">
+        <a href="#" class="main-content__title main-content__title--white">Предметы интерьера</a>
+      </div>
+      <div class="main-content main-content--light">
+        <a href="#" class="main-content__title main-content__title--white">Детские игрушки</a>
       </div>
       <section class="hits">
         <h2 class="hits__title">Вязаные корзинки</h2>
@@ -50,8 +52,8 @@
             <td>15см</td>
           </tr>
         </table>
-        <img src="#" width="100" height="100" alt="Вязаные корзинки">
-        <span class="hits__price">Цена: 900 руб.</span>
+        <img src="img\triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
+        <div class="hits__price">Цена: 900 руб.</div>
         <a href="#" class="hits__order btn">Заказать</a>
       </section>
       <section class="about-us">
@@ -100,7 +102,9 @@
             </td>
           </tr>
         </table>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412363!2d30.32089461564032!3d59.938796869048495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1462872705065" width="320" height="460" allowfullscreen></iframe>
+        <div class="map">
+          <iframe class="map__online" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412363!2d30.32089461564032!3d59.938796869048495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1462872705065" width="320" height="460" allowfullscreen></iframe>
+        </div>
         <a href="mailto:info@mimimishkashop.ru" class="contacts__write btn">Напиши нам</a>
       </section>
     </main>
