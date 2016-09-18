@@ -26,9 +26,26 @@
   font-weight: bold;
 
   padding: 0 30px;
-}
+};
 
 .container() {
   width: 320px;
   margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 768px;
+  }
+
+  @media @desktop-widths {
+    width: 1150px;
+  }
+};
+
+.clearfix() {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
 }

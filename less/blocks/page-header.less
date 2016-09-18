@@ -1,5 +1,35 @@
 .page-header {
   .container();
 
-  height: 80px;
+  min-height: 80px;
+  border-bottom: 2px #e7e7e7 solid;
+
+  &__logo img {
+    height: 36px;
+
+    .container();
+    padding-top: 22px;
+  };
+};
+
+@media @tablet-widths {
+  .page-header {
+    position: relative;
+
+    min-height: 88px;
+  };
+
+  .page-header__logo {
+    position: absolute;
+    right: 290px;
+    width: 100%;
+  }
+};
+
+@media @desktop-widths {
+  .page-header__logo {
+    position: absolute;
+    right: auto;
+    width: 100%;
+  }
 }

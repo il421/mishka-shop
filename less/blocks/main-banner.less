@@ -6,11 +6,26 @@
   .container();
 
   &__title {
-  font-family: @main-fonts;
-  font-size: 27px;
-  font-weight: bold;
-  line-height: 30px;
-  text-align: center;
+    font-family: @main-fonts;
+    font-size: 27px;
+    font-weight: bold;
+    line-height: 30px;
 
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+
+    padding: 75px 45px 0 45px;
+  }
+};
+
+@media @tablet-widths {
+  .main-banner{
+    height: 625px;
+    background-size: 100%;
+    &__title {
+      font-size: 43px;
+      line-height: 50px;
+      padding: 160px 137px 0 137px;
+    };
   };
 };
