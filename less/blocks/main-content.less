@@ -1,13 +1,14 @@
 .main-content {
   .container();
-  height: 105px;
 
   &--dark {
     background-color: @block-color;
+    height: 105px;
   };
 
   &--light {
     background-color: darken(@block-color, 10%);
+    height: 105px;
   };
 
   &--grey {
@@ -31,4 +32,37 @@
     font-size: 19px;
     line-height: 24px;
   };
+};
+
+@media @tablet-widths {
+  .main-content {
+    margin-top: -118px;
+    width: 668px;
+    height: 118px;
+
+  };
+
+  .main-content--light {
+    float: left;
+    width: 334px;
+    height: 118px;
+  };
+
+  .main-content--dark {
+    float: right;
+    width: 334px;
+    height: 118px;
+
+  };
+};
+
+@media @desktop-widths {
+  .main-content {
+    width: 1050px;
+  };
+
+  .main-content--light, .main-content--dark {
+    width: 525px;
+  };
+
 };

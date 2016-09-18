@@ -10,3 +10,51 @@
     .black-title-text;
   };
 };
+
+@media @tablet-widths {
+  .about-us {
+
+    &__list {
+      width: 668px;
+      min-height: 430px;
+      margin-top: 0;
+      margin-left: 50px;
+      padding: 0;
+      list-style: none;
+    };
+
+    &__item {
+      display: inline-block;
+
+      width: 300px;
+
+      padding: 60px 0 0 0;
+
+      font-size: 20px;
+
+    };
+
+    &__title {
+      .black-title-text-tablet;
+      margin-left: 50px;
+      margin-top: 90px;
+    };
+  };
+};
+
+@media @desktop-widths {
+  .about-us {
+
+    &__list {
+      margin-left: 225px;
+    };
+
+    &__title {
+      margin-left: 225px;
+      margin-top: 250px;
+
+      .black-title-text-desktop;
+    };
+
+  };
+};
