@@ -15,6 +15,10 @@
     -webkit-margin-after: 0;
 
     padding: 75px 45px 0 45px;
+
+    &__shipping--visually-hidden {
+      visibility: hidden;
+    }
   }
 };
 
@@ -22,10 +26,21 @@
   .main-banner{
     height: 630px;
     background-size: cover;
+
     &__title {
       font-size: 43px;
       line-height: 50px;
       padding: 160px 137px 0 137px;
+    };
+
+    &__shipping {
+      float: right;
+      margin-right: 50px;
+      margin-top: 25px;
+    };
+
+    &__shipping--visually-hidden {
+      visibility: visible;
     };
   };
 };

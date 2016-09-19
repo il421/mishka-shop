@@ -34,8 +34,6 @@
   font-size: 43px;
   line-height: 50px;
   font-weight: bold;
-
-  padding: 0;
 };
 
 .black-title-text-desktop {
@@ -68,4 +66,18 @@
     display: table;
     clear: both;
   }
+};
+
+.visually-hidden() {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

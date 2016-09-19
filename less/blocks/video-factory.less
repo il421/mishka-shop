@@ -9,3 +9,45 @@
     .container();
   };
 };
+
+@media @tablet-widths {
+  .video-factory {
+    padding: 0 50px;
+
+    &__video {
+      width: 668px;
+    };
+
+    &__title {
+      float: left;
+      width: 668px;
+    };
+  };
+};
+
+@media @desktop-widths {
+  .video-factory {
+    min-height: 460px;
+    padding: 0 50px;
+
+    &__video {
+      float: left;
+      max-width: 680px;
+      height: auto;
+    };
+
+    &__title {
+      float: right;
+      width: 435px;
+    };
+
+    &__description {
+      float: right;
+      width: 237px;
+    };
+
+    &__order {
+      float: right;
+    };
+  };
+};
