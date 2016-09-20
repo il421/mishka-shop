@@ -1,5 +1,7 @@
 .hits {
   .container();
+  width: 260px;
+  min-height: 825px;
 
   &__category {
   .blue-capital-text;
@@ -13,11 +15,16 @@
     .black-title-text;
   };
 
+  &__order {
+    padding: 18px 81px;
+  };
+
 };
 
 @media @tablet-widths {
   .hits {
     .clearfix();
+    min-height: 787px;
 
     &__title {
       float: left;
@@ -85,6 +92,7 @@
     &__order {
       margin-left: 50px;
       margin-top: 50px;
+      padding: 18px 102px;
     };
   };
 };
@@ -92,6 +100,7 @@
 @media @desktop-widths {
   .hits {
     position: relative;
+    min-height: 700px;
 
     &__category {
       float: left;

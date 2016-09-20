@@ -1,21 +1,26 @@
 .block {
-  .container();
+  padding: 0;
+  margin-bottom: 20px;
 
+  border: none;
+  border-top: 1px solid @blue-text-color;
 
   &__title {
-    position: relative;
   .blue-capital-text;
-  margin: 0;
+  padding-left: 0;
   };
 
-  &__order {
-    padding: 13px 95px;
+  &__name {
+    .black-bold-text;
+    line-height: 18px;
   };
 };
 
 @media @tablet-widths {
   .block {
-
+    position: relative;
+    border-top: none;
+    padding-left: 167px;
 
     &--gray {
       background-color: @extra-backgroung-color;
@@ -23,6 +28,14 @@
     };
 
     &__title {
+      position: absolute;
+      top: 5px;
+      left: 0;
+
+    };
+
+    &__name {
+      font-size: 19px;
     };
   };
 };

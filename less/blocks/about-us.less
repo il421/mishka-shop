@@ -1,5 +1,13 @@
 .about-us {
   .container();
+  width: 260px;
+  min-height: 830px;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  };
 
   &__item {
   .black-bold-text;
@@ -13,6 +21,7 @@
 
 @media @tablet-widths {
   .about-us {
+    min-height: 675px;
 
     &__list {
       width: 668px;
@@ -37,7 +46,6 @@
     &__title {
       .black-title-text-tablet;
       margin-left: 50px;
-      margin-top: 90px;
     };
   };
 };
@@ -51,7 +59,6 @@
 
     &__title {
       margin-left: 225px;
-      margin-top: 250px;
 
       .black-title-text-desktop;
     };
