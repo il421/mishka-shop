@@ -1,0 +1,41 @@
+.section {
+  .container();
+  background-color: @extra-backgroung-color;
+
+  &__title {
+    padding: 75px 0 80px 0;
+    text-align: center;
+
+    .black-title-text-tablet;
+  };
+
+  &__shipping--visually-hidden {
+    visibility: hidden;
+  };
+};
+
+@media @tablet-widths {
+  .section {
+    &__title {
+      padding: 105px 0 85px 0;
+    };
+
+    &__shipping {
+      float: right;
+      margin-right: 50px;
+      margin-top: 25px;
+    };
+
+    &__shipping--visually-hidden {
+      visibility: visible;
+    };
+  };
+};
+
+@media @desktop-widths {
+  .section {
+    &__title {
+      padding: 102px 0 108px 0;
+    };
+  };
+};

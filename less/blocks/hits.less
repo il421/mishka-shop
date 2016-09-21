@@ -1,5 +1,7 @@
 .hits {
   .container();
+  width: 260px;
+  min-height: 825px;
 
   &__category {
   .blue-capital-text;
@@ -13,7 +15,127 @@
     .black-title-text;
   };
 
-  &__description, &__options {
-    padding: 0 30px;
+  &__order {
+    padding: 18px 81px;
+  };
+
+};
+
+@media @tablet-widths {
+  .hits {
+    .clearfix();
+    min-height: 787px;
+
+    &__title {
+      float: left;
+
+      .black-title-text-tablet;
+
+      -webkit-margin-before: 0;
+      -webkit-margin-after: 0;
+      margin-top: 45px;
+      padding-left: 50px;
+    };
+
+    &__category {
+      float: right;
+      max-width: 80px;
+      text-align: center;
+
+      margin-top: 61px;
+      margin-right: 50px;
+    };
+
+    &__description {
+      float: left;
+      clear: both;
+
+      max-width: 280px;
+
+      font-size: 17px;
+      line-height: 30px;
+
+      margin-left: 50px;
+      margin-top: 44px;
+      margin-bottom: 40px;
+    };
+
+    &__picture {
+      float: right;
+      margin-top: -170px;
+      margin-right: 86px;
+      transform: scale(1.28);
+    };
+
+    &__options {
+      clear: both;
+      margin-left: 50px;
+
+      line-height: 20px;
+
+      border-collapse: collapse;
+    };
+
+    &__options td {
+      padding: 5px 30px 5px 0;
+
+      border-bottom: 1px solid #ececec;
+    };
+
+    &__price {
+      font-size: 20px;
+      padding-left: 50px;
+      margin-left: 75px;
+      margin-top: 60px;
+    };
+
+    &__order {
+      margin-left: 50px;
+      margin-top: 50px;
+      padding: 18px 102px;
+    };
+  };
+};
+
+@media @desktop-widths {
+  .hits {
+    position: relative;
+    min-height: 700px;
+
+    &__category {
+      float: left;
+      margin-top: 143px;
+      margin-left: 45px;
+      margin-right: 0;
+      padding-left: 50px;
+
+    };
+    &__picture {
+      position: absolute;
+      right: 125px;
+      top: 405px;
+      bottom: 0;
+      transform: scale(2.05);
+
+      z-index: -100;
+    };
+    &__title {
+      float: right;
+
+      max-width: 535px;
+
+      margin-top: 125px;
+      margin-right: 400px;
+      margin-left: 0;
+      padding-left: 0;
+
+      .black-title-text-desktop;
+
+      z-index: 100;
+    };
+
+    &__description, &__options, &__price, &__order {
+      margin-left: 240px;
+    };
   };
 };

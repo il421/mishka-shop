@@ -1,6 +1,43 @@
 .form-order {
+  padding: 0 30px;
 
-  &__title {
-  .blue-capital-text;
+  &__required {
+    font-size: 14px;
+  };
+
+  &__order {
+    padding: 18px 45px;
+    margin-top: 19px;
+    margin-bottom: 55px;
+  };
+};
+
+@media @tablet-widths {
+  .form-order {
+    .clearfix();
+    padding: 0 50px;
+
+    &__required {
+      float: right;
+      margin-top: 30px;
+
+      font-size: 17px;
+      line-height: 30px;
+    };
+
+    &__order {
+
+      float: left;
+
+      padding: 18px 29px;
+    };
+  };
+};
+
+@media @desktop-widths {
+  .form-order {
+    &__order {
+      margin-left: 175px;
+    };
   };
 };

@@ -6,11 +6,44 @@
   .container();
 
   &__title {
-  font-family: @main-fonts;
-  font-size: 27px;
-  font-weight: bold;
-  line-height: 30px;
-  text-align: center;
+    font-family: @main-fonts;
+    font-size: 27px;
+    font-weight: bold;
+    line-height: 30px;
 
+    padding: 75px 45px 0 45px;
+  };
+
+    &__shipping--visually-hidden {
+      visibility: hidden;
+  };
+};
+
+@media @tablet-widths {
+  .main-banner{
+    height: 630px;
+    background-size: cover;
+
+    &__title {
+      font-size: 43px;
+      line-height: 50px;
+      padding: 160px 137px 0 137px;
+    };
+
+    &__shipping {
+      float: right;
+      margin-right: 50px;
+      margin-top: 25px;
+    };
+
+    &__shipping--visually-hidden {
+      visibility: visible;
+    };
+  };
+};
+
+@media @tablet-widths {
+  .main-banner {
+    height: 745px;
   };
 };

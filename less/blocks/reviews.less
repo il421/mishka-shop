@@ -1,7 +1,85 @@
 .reviews {
   .container();
+  width: 260px;
 
   &__text {
   line-height: 30px;
+  };
+
+  &__write {
+    padding: 18px 80px;
+  };
+};
+
+@media @tablet-widths {
+  .reviews {
+    .clearfix();
+
+    height: 460px;
+
+    padding: 0;
+    background: url(../../img/review@1x.jpg) no-repeat @main-background-color;
+
+    &__title {
+      float: left;
+      clear: both;
+
+      width: 190px;
+      padding-top: 80px;
+      margin-left: 50px;
+      margin-right: 0;
+
+      .black-title-text-tablet;
+    };
+
+    &__items {
+      clear: both;
+      margin-left: 10px;
+    };
+
+    &__text {
+      font-size: 17px;
+      line-height: 30px;
+      width: 640px;
+
+      -webkit-margin-before: 0;
+      -webkit-margin-after: 0;
+      margin-bottom: 45px;
+    };
+
+    &__write {
+      float: right;
+      margin-top: -320px;
+      margin-right: 50px;
+      padding: 18px 43px;
+    };
+
+    &__auhor-name {
+      font-weight: bold;
+    };
+  };
+};
+
+@media @desktop-widths {
+  .reviews {
+    width: 1050px;
+
+    &__title {
+      width: 225px;
+      .black-title-text-desktop;
+    };
+
+    &__items {
+      margin-left: 140px;
+    };
+
+    &__text {
+      width: 760px;
+    };
+
+    &__write {
+      margin-top: -300px;
+      margin-right: 0;
+    };
   };
 };

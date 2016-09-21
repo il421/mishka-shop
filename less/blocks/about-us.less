@@ -1,5 +1,13 @@
 .about-us {
   .container();
+  width: 260px;
+  min-height: 830px;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  };
 
   &__item {
   .black-bold-text;
@@ -8,5 +16,52 @@
 
   &__title {
     .black-title-text;
+  };
+};
+
+@media @tablet-widths {
+  .about-us {
+    min-height: 675px;
+
+    &__list {
+      width: 668px;
+      min-height: 430px;
+      margin-top: 0;
+      margin-left: 50px;
+      padding: 0;
+      list-style: none;
+    };
+
+    &__item {
+      display: inline-block;
+
+      width: 300px;
+
+      padding: 60px 0 0 0;
+
+      font-size: 20px;
+
+    };
+
+    &__title {
+      .black-title-text-tablet;
+      margin-left: 50px;
+    };
+  };
+};
+
+@media @desktop-widths {
+  .about-us {
+
+    &__list {
+      margin-left: 225px;
+    };
+
+    &__title {
+      margin-left: 225px;
+
+      .black-title-text-desktop;
+    };
+
   };
 };

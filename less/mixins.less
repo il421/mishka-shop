@@ -4,8 +4,6 @@
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
-
-  padding: 0 30px;
 };
 
 .black-bold-text {
@@ -14,8 +12,6 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
-
-  padding: 0 30px;
 };
 
 .black-title-text {
@@ -24,11 +20,58 @@
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
+};
 
-  padding: 0 30px;
-}
+.black-title-text-tablet {
+  text-decoration: none;
+  color: @black-text-color;
+  font-size: 43px;
+  line-height: 50px;
+  font-weight: bold;
+};
+
+.black-title-text-desktop {
+  text-decoration: none;
+  color: @black-text-color;
+  font-size: 53px;
+  line-height: 57px;
+  font-weight: bold;
+
+  padding: 0;
+};
 
 .container() {
   width: 320px;
   margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 768px;
+  }
+
+  @media @desktop-widths {
+    width: 1150px;
+  }
+};
+
+.clearfix() {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+};
+
+.visually-hidden() {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
