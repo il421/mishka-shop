@@ -1,30 +1,32 @@
 .page-header {
   .container();
+  background-color: @main-background-color;
+};
 
-  min-height: 80px;
-  border-bottom: 2px #e7e7e7 solid;
+.page-header__logo {
+  display: block;
+  border-bottom: 1px @line-border-color solid;
+  min-height: 78px;
 
-  &__logo img {
-    height: 36px;
+};
 
-    .container();
-    margin-top: 22px;
-  };
+.page-header__logo img {
+  width: 86px;
+  height: 78px;
+  margin-left: 115px;
 };
 
 
 @media @tablet-widths {
   .page-header {
-    position: relative;
+    .container();
+
 
     min-height: 88px;
   };
 
   .page-header__logo {
-    position: absolute;
 
-    right: 290px;
-    width: 100%;
   }
 };
 

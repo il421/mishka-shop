@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <title>Интернет магазин "Мишка"</title>
   </head>
@@ -11,6 +12,7 @@
         <img src="img\logo-mobile.svg" width="86" height="35" alt="Интернет магазин Мишка">
       </a>
       <nav class="main-nav  main-nav--closed  main-nav--nojs">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
@@ -24,12 +26,12 @@
             <li class="main-nav__item main-nav__item--new"><a href="#">Новые поступления</a></li>
             <li class="main-nav__item main-nav__item--sales"><a href="#">Распродажа</a></li>
           </ul>
+          <div class="main-nav__shipping main-nav__shipping--visually-hidden">Бесплатная доставка по России</div>
         </div>
       </nav>
     </header>
     <main>
       <div class="section">
-        <span class="section__shipping section__shipping--visually-hidden">Бесплатная доставка по России</span>
         <h1 class="section__title">Вязание на заказ</h1>
       </div>
       <section class="knitting">
@@ -117,6 +119,7 @@
           <a href="https://htmlacademy.ru" class="page-footer__copyright__link">Разработано</a>
         </div>
       </div>
+      <script src="js/script.js"></script>
     </footer>
   </body>
 </html>
