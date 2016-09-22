@@ -1,33 +1,26 @@
 .section {
   .container();
   background-color: @extra-backgroung-color;
+};
 
-  &__title {
-    padding: 75px 0 80px 0;
-    text-align: center;
+.section__title {
+  padding: 75px 0 80px 0;
+  text-align: center;
+
+  .black-title-text;
+  font-size: 27px;
+};
+
+@media @tablet-widths {
+  .section__title {
+    padding: 105px 0 85px 0;
 
     .black-title-text-tablet;
   };
 };
 
-@media @tablet-widths {
-  .section {
-    &__title {
-      padding: 105px 0 85px 0;
-    };
-
-    &__shipping {
-      float: right;
-      margin-right: 50px;
-      margin-top: 25px;
-    };
-  };
-};
-
 @media @desktop-widths {
-  .section {
-    &__title {
-      padding: 102px 0 108px 0;
-    };
+  .section__title {
+    padding: 102px 0 108px 0;
   };
 };

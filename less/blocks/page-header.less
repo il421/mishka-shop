@@ -1,12 +1,13 @@
 .page-header {
   .container();
+  min-height: 78px;
+
   background-color: @main-background-color;
+  border-bottom: 1px @line-border-color solid;
 };
 
 .page-header__logo {
   display: block;
-  border-bottom: 1px @line-border-color solid;
-  min-height: 78px;
 
 };
 
@@ -19,21 +20,35 @@
 
 @media @tablet-widths {
   .page-header {
-    .container();
 
 
-    min-height: 88px;
+
+    height: 170px;
+
+
+    border: 2px solid green;
   };
 
   .page-header__logo {
+    max-height: 85px;
+    width: 86px;
+    margin: 0;
+    margin-right: 0;
 
-  }
+  };
+
+  .page-header__logo img {
+    margin: 0;
+    max-height: 85px;
+    border: 2px solid red;
+  };
 };
 
 @media @desktop-widths {
-  .page-header__logo {
-    position: absolute;
-    right: auto;
-    width: 100%;
-  }
-}
+
+
+
+  .page-header__logo img {
+
+  };
+};
