@@ -1,7 +1,14 @@
 .page-header {
   .container();
-  min-height: 78px;
+  height: 78px;
 
   background-color: @main-background-color;
   border-bottom: 1px @line-border-color solid;
+  border-top: 1px @line-border-color solid;
+};
+
+@media @tablet-widths {
+  .page-header {
+    min-height: 150px;
+  };
 };
