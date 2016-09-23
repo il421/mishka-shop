@@ -15,18 +15,18 @@
             <img src="img/logo-mobile.svg" width="86" height="35" alt="Интернет магазин Мишка">
           </a>
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-            <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+            <li class="main-nav__item main-nav__item--catalog"><a href="catalog.html">Каталог товаров</a></li>
+            <li class="main-nav__item main-nav__item--knitting"><a href="form.html">Вязание на заказ</a></li>
           </ul>
-          <ul class="main-nav__user-items">
+          <!--<ul class="main-nav__user-items">
             <li class="main-nav__item main-nav__item--search"><a href="#">Поиск по сайту</a></li>
             <li class="main-nav__item main-nav__item--chart"><a href="#">Корзина: пока пуста</a></li>
-          </ul>
+          </ul>-->
           <ul class="main-nav__stock main-nav__stock--visually-hidden">
             <li class="main-nav__item main-nav__item--new"><a href="#">Новые поступления</a></li>
             <li class="main-nav__item main-nav__item--sales"><a href="#">Распродажа</a></li>
           </ul>
-          <div class="main-nav__shipping main-nav__item  main-nav__item--visually-hidden">Бесплатная доставка по России</div>
+          <div class="main-nav__item  main-nav__shipping main-nav__item--visually-hidden">Бесплатная доставка по России</div>
         </div>
       </nav>
     </header>
@@ -43,8 +43,10 @@
         </div>
       </div>
       <section class="hits">
-        <h2 class="hits__title">Вязаные корзинки</h2>
-        <b class="hits__category">Товар недели</b>
+        <div class="hits__title-category">
+          <h2 class="hits__title">Вязаные корзинки</h2>
+          <b class="hits__category">Товар недели</b>
+        </div>
         <p class="hits__description">
           Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
         </p>
