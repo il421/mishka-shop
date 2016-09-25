@@ -1,13 +1,14 @@
 .main-banner {
   .container();
 
-  height: 282px;
+  height: 488px;
 
-  background: url(../../img/hero-mobile@1x.jpg) no-repeat @main-background-color;
+
   background-position: top;
 };
 
 .main-banner__title {
+  position: relative;
   display: inline-block;
 
   margin-top: 75px;
@@ -18,25 +19,66 @@
 
   .black-title-text;
   font-size: 27px;
+
+  z-index: 100;
+
+  &::before {
+    position: absolute;
+    content: "";
+
+    top: -75px;
+    right: -30px;
+
+    width: 320px;
+    height: 375px;
+
+    background: url(../../img/hero-mobile@1x.jpg) no-repeat @main-background-color;
+    background-position: top center;
+    border-top: 1px solid @line-border-color;
+
+    z-index: -100;
+  };
 };
 
 @media @tablet-widths {
   .main-banner {
-    height: 626px;
-    background-size: cover;
+    height: 675px;
   };
 
   .main-banner__title {
     .black-title-text-tablet;
-    margin-top: 158px;
+    margin-top: 70px;
     margin-left: 50px;
     margin-right: 50px;
     padding: 0 85px;
+
+    &::before {
+      position: absolute;
+      content: "";
+
+      top: -136px;
+      right: -50px;
+
+      width: 768px;
+      height: 725px;
+
+      background-color: green;
+
+      z-index: -100;
+    };
   };
 };
 
 @media @desktop-widths {
   .main-banner__title {
     padding: 0 215px;
+
+
+    &::before {
+      right: -50px;
+
+      width: 1150px;
+      height: 745px;
+    };
   };
 };

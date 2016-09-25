@@ -1,6 +1,9 @@
 .extra-nav {
   .container();
   position: relative;
+  margin-top: 120px;
+
+  z-index: 100;
 
   &--dark {
     background-color: @block-color;
@@ -65,7 +68,7 @@
 
 @media @tablet-widths {
   .extra-nav {
-    margin-top: -120px;
+    margin-top: 370px;
   };
 
   .extra-nav--light {
@@ -124,6 +127,10 @@
 };
 
 @media @desktop-widths {
+  .extra-nav {
+      margin-top: 390px;
+  };
+
   .extra-nav__title {
     padding-right: 377px;
     padding-left: 39px;
