@@ -1,19 +1,24 @@
 .block {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
   padding: 0;
   margin-bottom: 20px;
 
   border: none;
   border-top: 1px solid @blue-text-color;
+};
 
-  &__title {
+.block__title {
   .blue-capital-text;
   padding-left: 0;
-  };
+};
 
-  &__name {
-    .black-bold-text;
-    line-height: 18px;
-  };
+.block__name {
+  .black-bold-text;
+  line-height: 18px;
 };
 
 @media @tablet-widths {

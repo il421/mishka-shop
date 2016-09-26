@@ -1,16 +1,22 @@
 .form-order {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   padding: 0 30px;
-
-  &__required {
-    font-size: 14px;
-  };
-
-  &__order {
-    padding: 18px 45px;
-    margin-top: 19px;
-    margin-bottom: 55px;
-  };
+  height: 1450px;
 };
+
+.form-order__required {
+  font-size: 14px;
+};
+
+.form-order__order {
+  padding: 18px 45px;
+  margin-top: 19px;
+  margin-bottom: 55px;
+};
+
 
 @media @tablet-widths {
   .form-order {
