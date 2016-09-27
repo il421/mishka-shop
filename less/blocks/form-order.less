@@ -3,10 +3,10 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items:  flex-start;
+  align-items:  stretch;
 
-  padding: 0 30px;
-  height: 1450px;
+  margin: 0 30px;
+  height: 1440px;
 };
 
 .form-order__required {
@@ -21,24 +21,20 @@
 
 
 @media @tablet-widths {
+
   .form-order {
-    .clearfix();
-    padding: 0 50px;
+    margin-right: 50px;
+    margin-left: 217px;
+  };
 
-    &__required {
-      float: right;
-      margin-top: 30px;
+  .form-order__required {
 
-      font-size: 17px;
-      line-height: 30px;
-    };
+    font-size: 17px;
+    line-height: 30px;
+  };
 
-    &__order {
-
-      float: left;
-
-      padding: 18px 29px;
-    };
+  .form-order__order {
+    padding: 18px 29px;
   };
 };
 

@@ -2,6 +2,15 @@
   padding: 0;
   margin: 0;
 
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content:   space-between;
+  align-items:  baseline;
+
+  /*тут я пробовал разные варинты, блоки не реагируют на флекс*/
+
   border: none;
   border-top: 1px solid @blue-text-color;
 };
@@ -9,6 +18,7 @@
 .block__title {
   .blue-capital-text;
   padding-left: 0;
+  padding-right: 20px;
 };
 
 .block__name {
@@ -16,7 +26,7 @@
   display: block;
 
   margin-top: 30px;
-  padding-left: 60px;
+  padding-left: 65px;
   .black-bold-text;
   line-height: 18px;
 
@@ -28,7 +38,8 @@
   display: none;
 };
 
-.block__name input[type="radio"] + .block__radio-indicator {
+.block__name input[type="radio"] +
+.block__radio-indicator {
   position: absolute;
   top: -5px;
   left: 0;
@@ -40,23 +51,25 @@
   border-radius: 50%;
 };
 
-.block__name input[type="radio"]:checked + .block__radio-indicator::after {
+.block__name input[type="radio"]:checked +
+.block__radio-indicator::after {
   position: absolute;
 
   content: "";
 
-  top: 6px;
-  left: 6px;
+  top: 7px;
+  left: 7px;
 
-  width: 14px;
-  height: 14px;
+  width: 10px;
+  height: 10px;
 
   border: 5px solid @blue-text-color;
   border-radius: 50%;
   background: @blue-text-color;
 };
 
-.block__name input[type="checkbox"] + .block__checkbox-indicator {
+.block__name input[type="checkbox"] +
+.block__checkbox-indicator {
   position: absolute;
   top: -10px;
   left: 0;
@@ -67,42 +80,148 @@
   border: 2px solid @black-text-color;
 };
 
-
-.block__name input[type="checkbox"]:checked + .block__checkbox-indicator::after {
+.block__name input[type="checkbox"]:checked +
+.block__checkbox-indicator::after {
   position: absolute;
 
   content: "";
 
-  top: 6px;
-  left: 6px;
+  top: 17px;
+  right: 5px;
 
-  width: 14px;
-  height: 14px;
+  width: 15px;
+  height: 2px;
 
-  border: 5px solid @blue-text-color;
-  border-radius: 50%;
-  background: @blue-text-color;
+  transform: rotate(-45deg);
+  background: @black-text-color;
+};
+
+.block__name input[type="checkbox"]:checked +
+.block__checkbox-indicator::before {
+  position: absolute;
+
+  content: "";
+
+  top: 20px;
+  right: 17px;
+
+  width: 7px;
+  height: 2px;
+
+  transform: rotate(45deg);
+  background: @black-text-color;
+};
+
+.block:nth-child(3) .block__name {
+  padding: 0;
+};
+
+.block:nth-child(3) input[type="text"] {
+  padding: 18px 0;
+  margin: 0;
+  width: 100%;
+
+  font-size: 17px;
+  line-height: 18px;
+
+  border: none;
+  border-bottom: 2px solid @black-text-color;
+};
+
+.block input[type="tel"],
+.block input[type="email"] {
+  padding: 18px 0;
+  width: 100%;
+
+  font-size: 17px;
+  line-height: 18px;
+
+  border: none;
+  border-bottom: 2px solid @black-text-color;
+};
+
+.block input[type="textarea"] {
+  min-height: 138px;
+  width: 100%;
+  margin-top: 30px;
+
+  font-size: 17px;
+  line-height: 18px;
+
+  border: 2px solid @black-text-color;
+
+  resize: none;
 };
 
 @media @tablet-widths {
   .block {
     position: relative;
-    border-top: none;
-    padding-left: 167px;
-  };
+    width: 100%;
 
-  .block--gray {
-    background-color: @extra-backgroung-color;
-    margin: 0;
+    border-top: none;
   };
 
   .block__title {
     position: absolute;
-    top: 5px;
-    left: 0;
+    top: 62px;
+    left: -167px;
   };
 
   .block__name {
+    margin-top: 60px;
+    padding-left: 85px;
     font-size: 19px;
+    display: block;
+  };
+
+  .block:nth-child(2) {
+
+    height: 325px;
+    border: 1px solid red;
+  };
+
+  .block__name input[type="radio"] +
+  .block__radio-indicator {
+    top: -15px;
+    left: 0;
+
+    width: 46px;
+    height: 46px;
+  };
+
+  .block__name input[type="radio"]:checked +
+  .block__radio-indicator::after {
+    top: 10px;
+    left: 10px;
+
+    width: 15px;
+    height: 15px;
+  };
+
+  .block__name input[type="checkbox"] +
+  .block__checkbox-indicator {
+    top: -20px;
+    left: 0;
+
+    width: 48px;
+    height: 48px;
+  };
+
+  .block__name input[type="checkbox"]:checked +
+  .block__checkbox-indicator::after {
+    top: 20px;
+    right: 5px;
+
+    width: 20px;
+    height: 2px;
+  };
+
+  .block__name input[type="checkbox"]:checked +
+  .block__checkbox-indicator::before {
+    top: 24px;
+    right: 20px;
+
+    width: 10px;
+    height: 2px;
   };
 };
