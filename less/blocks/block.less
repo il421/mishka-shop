@@ -1,11 +1,6 @@
 .block {
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  
   padding: 0;
-  margin-bottom: 20px;
+  margin: 0;
 
   border: none;
   border-top: 1px solid @blue-text-color;
@@ -17,8 +12,76 @@
 };
 
 .block__name {
+  position: relative;
+  display: block;
+
+  margin-top: 30px;
+  padding-left: 60px;
   .black-bold-text;
   line-height: 18px;
+
+  cursor: pointer;
+};
+
+.block__name input[type="radio"],
+.block__name input[type="checkbox"] {
+  display: none;
+};
+
+.block__name input[type="radio"] + .block__radio-indicator {
+  position: absolute;
+  top: -5px;
+  left: 0;
+
+  width: 35px;
+  height: 35px;
+
+  border: 2px solid @black-text-color;
+  border-radius: 50%;
+};
+
+.block__name input[type="radio"]:checked + .block__radio-indicator::after {
+  position: absolute;
+
+  content: "";
+
+  top: 6px;
+  left: 6px;
+
+  width: 14px;
+  height: 14px;
+
+  border: 5px solid @blue-text-color;
+  border-radius: 50%;
+  background: @blue-text-color;
+};
+
+.block__name input[type="checkbox"] + .block__checkbox-indicator {
+  position: absolute;
+  top: -10px;
+  left: 0;
+
+  width: 36px;
+  height: 36px;
+
+  border: 2px solid @black-text-color;
+};
+
+
+.block__name input[type="checkbox"]:checked + .block__checkbox-indicator::after {
+  position: absolute;
+
+  content: "";
+
+  top: 6px;
+  left: 6px;
+
+  width: 14px;
+  height: 14px;
+
+  border: 5px solid @blue-text-color;
+  border-radius: 50%;
+  background: @blue-text-color;
 };
 
 @media @tablet-widths {
@@ -26,21 +89,20 @@
     position: relative;
     border-top: none;
     padding-left: 167px;
+  };
 
-    &--gray {
-      background-color: @extra-backgroung-color;
-      margin: 0;
-    };
+  .block--gray {
+    background-color: @extra-backgroung-color;
+    margin: 0;
+  };
 
-    &__title {
-      position: absolute;
-      top: 5px;
-      left: 0;
+  .block__title {
+    position: absolute;
+    top: 5px;
+    left: 0;
+  };
 
-    };
-
-    &__name {
-      font-size: 19px;
-    };
+  .block__name {
+    font-size: 19px;
   };
 };
