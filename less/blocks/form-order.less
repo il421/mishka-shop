@@ -3,7 +3,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items:  stretch;
+  align-items: stretch;
 
   margin: 0 30px;
   height: 1440px;
@@ -15,7 +15,6 @@
 
 .form-order__order {
   padding: 18px 45px;
-  margin-top: 19px;
   margin-bottom: 55px;
 };
 
@@ -23,8 +22,10 @@
 @media @tablet-widths {
 
   .form-order {
+
     margin-right: 50px;
-    margin-left: 217px;
+    margin-left: 50px;
+    height: 1385px;
   };
 
   .form-order__required {
@@ -34,14 +35,16 @@
   };
 
   .form-order__order {
-    padding: 18px 29px;
+    padding: 18px 0;
+    width: 226px;
+
+    text-align: center;
   };
 };
 
 @media @desktop-widths {
   .form-order {
-    &__order {
-      margin-left: 175px;
+
     };
-  };
+
 };

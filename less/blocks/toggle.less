@@ -21,64 +21,14 @@
 };
 
 .toggle__prev {
-  position: relative;
+  background: url("../img/icon-left-arrow.svg") no-repeat;
+  background-position: center;
   border-right: 1px solid @line-border-color;
-
-  &::after {
-    position: absolute;
-    content: "";
-    top: 24px;
-    right: 40px;
-
-    width: 44px;
-    height: 4px;
-
-    background-color: @black-text-color;
-  };
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 21px;
-    right: 75px;
-
-    width: 12px;
-    height: 4px;
-
-    transform: rotate(-45deg);
-
-    background-color: @black-text-color;
-  };
 };
 
 .toggle__next {
-  position: relative;
-
-  &::after {
-    position: absolute;
-    content: "";
-    top: 24px;
-    right: 45px;
-
-    width: 44px;
-    height: 4px;
-
-    background-color: @black-text-color;
-  };
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 21px;
-    right: 40px;
-
-    width: 12px;
-    height: 4px;
-
-    transform: rotate(45deg);
-
-    background-color: @black-text-color;
-  };
+  background: url("../img/icon-right-arrow.svg") no-repeat;
+  background-position: center;
 };
 
 @media @tablet-widths {
