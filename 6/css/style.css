@@ -318,25 +318,25 @@ th {
   height: 40px;
 }
 .about-us__item:nth-child(1)::before {
-  background: url("../../img/icon-feature-1.svg") no-repeat;
+  background: url("../img/icon-feature-1.svg") no-repeat;
 }
 .about-us__item:nth-child(1)::before {
-  background: url("../../img/icon-feature-1.svg") no-repeat;
+  background: url("../img/icon-feature-1.svg") no-repeat;
 }
 .about-us__item:nth-child(2)::before {
-  background: url("../../img/icon-feature-2.svg") no-repeat;
+  background: url("../img/icon-feature-2.svg") no-repeat;
 }
 .about-us__item:nth-child(3)::before {
-  background: url("../../img/icon-feature-3.svg") no-repeat;
+  background: url("../img/icon-feature-3.svg") no-repeat;
 }
 .about-us__item:nth-child(4)::before {
-  background: url("../../img/icon-feature-4.svg") no-repeat;
+  background: url("../img/icon-feature-4.svg") no-repeat;
 }
 .about-us__item:nth-child(5)::before {
-  background: url("../../img/icon-feature-5.svg") no-repeat;
+  background: url("../img/icon-feature-5.svg") no-repeat;
 }
 .about-us__item:nth-child(6)::before {
-  background: url("../../img/icon-feature-6.svg") no-repeat;
+  background: url("../img/icon-feature-6.svg") no-repeat;
 }
 @media (min-width: 768px) {
   .about-us {
@@ -647,7 +647,7 @@ th {
     right: 50px;
     width: 50px;
     height: 80px;
-    background: url("../../img/icon-flag.svg") no-repeat;
+    background: url("../img/icon-flag.svg") no-repeat;
   }
   .contacts__address {
     margin-left: 50px;
@@ -1190,7 +1190,6 @@ th {
   padding: 30px 0;
   padding-right: 185px;
   padding-left: 30px;
-  font-family: 'Open Sans';
   font-size: 27px;
   font-weight: bold;
   line-height: 30px;
@@ -1211,7 +1210,7 @@ th {
   right: 0;
   width: 65px;
   height: 65px;
-  background: url("../../img/icon-interior.svg") no-repeat;
+  background: url("../img/icon-interior.svg") no-repeat;
 }
 .extra-nav__title--cube::before {
   content: "";
@@ -1219,7 +1218,7 @@ th {
   right: 10px;
   width: 65px;
   height: 65px;
-  background: url("../../img/icon-toy.svg") no-repeat;
+  background: url("../img/icon-toy.svg") no-repeat;
 }
 @media (min-width: 768px) {
   .extra-nav {
@@ -1253,7 +1252,7 @@ th {
     left: 310px;
     width: 65px;
     height: 65px;
-    background: url("../../img/icon-interior.svg") no-repeat;
+    background: url("../img/icon-interior.svg") no-repeat;
   }
   .extra-nav__title--cube::before {
     content: "";
@@ -1261,7 +1260,7 @@ th {
     right: 80px;
     width: 65px;
     height: 65px;
-    background: url("../../img/icon-toy.svg") no-repeat;
+    background: url("../img/icon-toy.svg") no-repeat;
   }
 }
 @media (min-width: 1150px) {
@@ -1279,7 +1278,7 @@ th {
     left: 500px;
     width: 65px;
     height: 65px;
-    background: url("../../img/icon-interior.svg") no-repeat;
+    background: url("../img/icon-interior.svg") no-repeat;
   }
   .extra-nav--light,
   .extra-nav--dark {
@@ -1326,15 +1325,15 @@ th {
   margin-right: 0;
 }
 .page-footer__social-links__link--vk {
-  background: url("../../img/icon-insta.svg") no-repeat;
+  background: url("../img/icon-insta.svg") no-repeat;
   background-position: center;
 }
 .page-footer__social-links__link--fb {
-  background: url("../../img/icon-fb.svg") no-repeat;
+  background: url("../img/icon-fb.svg") no-repeat;
   background-position: center;
 }
 .page-footer__social-links__link--in {
-  background: url("../../img/icon-twitter.svg") no-repeat;
+  background: url("../img/icon-twitter.svg") no-repeat;
   background-position: center;
 }
 .page-footer__copyright {
@@ -1360,7 +1359,7 @@ th {
   content: "";
   width: 27px;
   height: 34px;
-  background: url("../../img/logo-htmlacademy.svg") no-repeat;
+  background: url("../img/logo-htmlacademy.svg") no-repeat;
 }
 @media (min-width: 768px) {
   .page-footer__wrapper {
@@ -1803,7 +1802,7 @@ th {
 }
 .map {
   height: 457px;
-  background: #ffffff url("../../map-mobile@1x.jpg") no-repeat;
+  background: #ffffff url("../map-mobile@1x.jpg") no-repeat;
   background-position: center;
 }
 .map__online {
@@ -1898,7 +1897,7 @@ th {
     align-items: baseline;
     height: 459px;
     margin: 0;
-    background: url(../../img/review@1x.jpg) no-repeat #ffffff;
+    background: url(../img/review@1x.jpg) no-repeat #ffffff;
   }
   .reviews__title {
     margin: 0;
@@ -2156,7 +2155,7 @@ th {
   left: 30px;
   width: 35px;
   height: 30px;
-  background: url("../../img/icon-video.svg") no-repeat;
+  background: url("../img/icon-video.svg") no-repeat;
 }
 .video-factory__description {
   font-size: 13px;
