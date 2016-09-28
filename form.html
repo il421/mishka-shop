@@ -43,33 +43,33 @@
         <form class="form-order" action="#" method="post">
           <fieldset class="form-section">
             <legend class="form-section__title">Тип</legend>
-            <div class="input">
-              <input class="input__type" id="accessory" type="radio" name="type" value="accessory" checked>
-              <label class="input__name" for="accessory">Аксессуар для интерьера</label>
-              <label class="input__name" for="toy">Детская игрушка</label>
-              <input class="input__type" id="toy" type="radio" name="type" value="toy">
+            <div class="form-section__type">
+              <input id="accessory" type="radio" name="type" value="accessory" checked>
+              <label for="accessory">Аксессуар для интерьера</label>
+              <input id="toy" type="radio" name="type" value="toy">
+              <label for="toy">Детская игрушка</label>
             </div>
           </fieldset>
           <fieldset class="form-section">
             <legend class="form-section__title">Цвет</legend>
-            <div class="form-section__input">
-              <label for="white">Белый</label>
+            <div class="form-section__color">
               <input id="white" type="checkbox" value="white" checked>
-              <label for="gray">Серый</label>
+              <label for="white">Белый</label>
               <input id="gray" type="checkbox" value="gray" checked>
-              <label for="tiffany">"Тиффани"</label>
+              <label for="gray">Серый</label>
               <input id="tiffany" type="checkbox" value="tiffany">
-              <label for="black">Чёрный</label>
+              <label for="tiffany">"Тиффани"</label>
               <input id="black" type="checkbox" value="black">
-              <label for="pink">Розовый</label>
+              <label for="black">Чёрный</label>
               <input id="pink" type="checkbox" value="pink">
-              <label for="orange">Оранжевый</label>
+              <label for="pink">Розовый</label>
               <input id="orange" type="checkbox" name="orange">
+              <label for="orange">Оранжевый</label>
             </div>
           </fieldset>
           <fieldset class="form-section">
             <legend class="form-section__title">ФИО</legend>
-            <div class="form-section__input">
+            <div class="form-section__name">
               <label for="first-name">Имя:</label>
               <input type="text" name="first-name" id="first-name" placeholder="Введите ваше имя" required>
               <label for="last-name">Фамилия:</label>
@@ -80,19 +80,19 @@
           </fieldset>
           <fieldset class="form-section">
             <legend class="form-section__title">Тел</legend>
-            <div class="form-section__input">
+            <div class="form-section__phone">
               <input type="tel" name="tel" pattern="+7[0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 ХХХ ХХ ХХ" required>
             </div>
           </fieldset>
           <fieldset class="form-section">
             <legend class="form-section__title">Email</legend>
-            <div class="form-section__input">
+            <div class="form-section__email">
               <input type="email" name="email" placeholder="Ваш Email" required>
             </div>
           </fieldset>
           <fieldset class="form-section">
             <legend class="form-section__title">Доп</legend>
-            <div class="form-section__input">
+            <div class="form-section__extra">
               <input type="textarea" rows="10" cols="20" name="text" placeholder="Опишите все ваши пожелания к заказу" required>
             </div>
           </fieldset>

@@ -1,4 +1,4 @@
-.block {
+.form-section {
   padding: 0;
   margin: 0;
 
@@ -9,38 +9,47 @@
   align-content: space-between;
   align-items:  baseline;
 
-  /*тут я пробовал разные варинты, блоки не реагируют на флекс*/
-
   border: none;
   border-top: 1px solid @blue-text-color;
 };
 
-.block__title {
+.form-section__title {
   .blue-capital-text;
   padding-left: 0;
   padding-right: 20px;
 };
 
-.block__name {
+.form-section__type {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items:  stretch;
+};
+
+.form-section__type input[type="radio"],
+.form-section__color input[type="checkbox"] {
+  display: none;
+};
+
+
+.form-section__type label {
   position: relative;
-  display: block;
 
   margin-top: 30px;
-  padding-left: 65px;
+  padding-left: 60px;
+
   .black-bold-text;
   line-height: 18px;
 
   cursor: pointer;
 };
 
-.block__name input[type="radio"],
-.block__name input[type="checkbox"] {
-  display: none;
-};
-
-.block__name input[type="radio"] +
-.block__radio-indicator {
+.form-section__type label::after {
   position: absolute;
+  content: "";
+
   top: -5px;
   left: 0;
 
@@ -51,14 +60,13 @@
   border-radius: 50%;
 };
 
-.block__name input[type="radio"]:checked +
-.block__radio-indicator::after {
+.form-section__type input[type="radio"]:checked + label::before {
   position: absolute;
 
   content: "";
 
-  top: 7px;
-  left: 7px;
+  top: 4px;
+  left: 9px;
 
   width: 10px;
   height: 10px;
@@ -67,6 +75,7 @@
   border-radius: 50%;
   background: @blue-text-color;
 };
+
 
 .block__name input[type="checkbox"] +
 .block__checkbox-indicator {
