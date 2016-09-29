@@ -66,6 +66,18 @@
   };
 };
 
+.contacts__address a:hover {
+  color: @blue-text-color;
+};
+
+.contacts__address a:active {
+  color: lighten(@blue-text-color, 30%);
+};
+
+.contacts__address a:active::before{
+  background-color: lighten(@blue-text-color, 30%);
+};
+
 .contacts__write {
   padding: 18px 50px;
   margin: 0 30px;

@@ -136,7 +136,43 @@
         </div>
       </div>
     </footer>
+    <div class="modal-wrapper">
+      <div class="modal-form">
+        <form class="modal-form__select" action="#" method="get">
+          <span class="modal-form__title">Добавить в корзину</span>
+          <span class="modal-form__action">Выбирите размер:</span>
+          <div>
+            <input id="small" type="radio" name="select" value="small" checked>
+            <label for="small">S</label>
+            <input id="medium" type="radio" name="select" value="medium">
+            <label for="medium">M</label>
+            <input id="large" type="radio" name="select" value="large">
+            <label for="large">L</label>
+          </div>
+          <input class="btn" type="submit" name="submit" value="добавить">
+        </form>
+      </div>
+    </div>
     <script src="js/script.js"></script>
+    <script type="text/javascript">
+      var link = document.querySelector(".hits__order");
+      var popup = document.querySelector(".modal-form");
+      var bg = document.querySelector(".modal-wrapper");
 
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("modal-form--show");
+        bg.classList.add("modal-wrapper--show");
+      });
+
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (popup.classList.contains("modal-form--show")) {
+            popup.classList.remove("modal-form--show");
+            bg.classList.remove("modal-wrapper--show");
+          }
+        }
+      });
+    </script>
   </body>
 </html>
