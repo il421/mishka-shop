@@ -42,75 +42,71 @@
           вами, чтобы уточнить детали.
         </p>
         <form class="form-order" action="#" method="post">
-          <fieldset class="block">
-            <legend class="block__title">Тип</legend>
-            <label class="block__name" for="accessory">
-              <input class="block__type" id="accessory" type="radio" name="type" value="accessory" checked>
-              <span class="block__radio-indicator"></span>
-              Аксессуар для интерьера
-            </label>
-            <label class="block__name" for="toy">
-              <input class="block__type" id="toy" type="radio" name="type" value="toy">
-              <span class="block__radio-indicator"></span>
-              Детская игрушка
-            </label>
+          <fieldset class="form-section">
+            <legend class="form-section__title">Тип</legend>
+            <div class="form-section__type">
+              <input id="accessory" type="radio" name="type" value="accessory" checked>
+              <label for="accessory">Аксессуар для интерьера</label>
+              <input id="toy" type="radio" name="type" value="toy">
+              <label for="toy">Детская игрушка</label>
+            </div>
           </fieldset>
-          <fieldset class="block">
-            <legend class="block__title">Цвет</legend>
-            <label class="block__name" for="white">
-              <input class="block__color" id="white" type="checkbox" value="white" checked>
-              <span class="block__checkbox-indicator"></span>
-              Белый
-            </label>
-            <label class="block__name" for="gray">
-              <input class="block__color" id="gray" type="checkbox" value="gray" checked>
-              <span class="block__checkbox-indicator"></span>
-              Серый
-            </label>
-            <label class="block__name" for="tiffany">
-              <input class="form-order__block__color" id="tiffany" type="checkbox" value="tiffany">
-              <span class="block__checkbox-indicator"></span>
-              "Тиффани"
-            </label>
-            <label class="block__name" for="black">
-              <input class="block__color" id="black" type="checkbox" value="black">
-              <span class="block__checkbox-indicator"></span>
-              Чёрный
-            </label>
-            <label class="block__name" for="pink">
-              <input class="block__color" id="pink" type="checkbox" value="pink">
-              <span class="block__checkbox-indicator"></span>
-              Розовый
-            </label>
-            <label class="block__name" for="orange">
-              <input class="block__color" id="orange" type="checkbox" name="orange">
-              <span class="block__checkbox-indicator"></span>
-              Оранжевый
-            </label>
+          <fieldset class="form-section">
+            <legend class="form-section__title">Цвет</legend>
+            <div class="form-section__color">
+              <input id="white" type="checkbox" value="white" checked>
+              <label for="white">Белый</label>
+              <input id="gray" type="checkbox" value="gray" checked>
+              <label for="gray">Серый</label>
+              <input id="tiffany" type="checkbox" value="tiffany">
+              <label for="tiffany">"Тиффани"</label>
+              <input id="black" type="checkbox" value="black">
+              <label for="black">Чёрный</label>
+              <input id="pink" type="checkbox" value="pink">
+              <label for="pink">Розовый</label>
+              <input id="orange" type="checkbox" name="orange">
+              <label for="orange">Оранжевый</label>
+            </div>
           </fieldset>
-          <fieldset class="block">
-            <legend class="block__title">ФИО</legend>
-            <label class="block__name" for="first-name">Имя:</label>
-            <input type="text" name="first-name" id="first-name" placeholder="Введите ваше имя" required>
-            <label class="block__name" for="last-name">Фамилия:</label>
-            <input type="text" name="last-name" id="last-name" placeholder="Укажите фамилию" required>
-            <label class="block__name" for="middle-name">Отчество:</label>
-            <input type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете" required>
+          <fieldset class="form-section">
+            <legend class="form-section__title">ФИО</legend>
+            <div class="form-section__name">
+              <div>
+                <label for="first-name">Имя:</label>
+                <input type="text" name="first-name" id="first-name" placeholder="Введите ваше имя" required>
+              </div>
+              <div>
+                <label for="last-name">Фамилия:</label>
+                <input type="text" name="last-name" id="last-name" placeholder="Укажите фамилию" required>
+              </div>
+              <div>
+                <label for="middle-name">Отчество:</label>
+                <input type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете" required>
+              </div>
+            </div>
           </fieldset>
-          <fieldset class="block block--gray">
-            <legend class="block__title">Тел</legend>
-            <input type="tel" name="tel" pattern="+7[0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 ХХХ ХХ ХХ" required>
+          <fieldset class="form-section">
+            <legend class="form-section__title">Тел</legend>
+            <div class="form-section__phone">
+              <input type="tel" name="tel" pattern="+7[0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 ХХХ ХХ ХХ" required>
+            </div>
           </fieldset>
-          <fieldset class="block block--gray">
-            <legend class="block__title">Email</legend>
-            <input type="email" name="email" placeholder="Ваш Email" required>
+          <fieldset class="form-section">
+            <legend class="form-section__title">Email</legend>
+            <div class="form-section__email">
+              <input type="email" name="email" placeholder="Ваш Email" required>
+            </div>
           </fieldset>
-          <fieldset class="block">
-            <legend class="block__title">Доп</legend>
-            <input type="textarea" rows="10" cols="20" name="text" placeholder="Опишите все ваши пожелания к заказу" required>
+          <fieldset class="form-section">
+            <legend class="form-section__title">Доп</legend>
+            <div class="form-section__extra">
+              <textarea name="text" placeholder="Опишите все ваши пожелания к заказу" required></textarea>
+            </div>
           </fieldset>
-          <span class="form-order__required">Все поля обязательны для заполнения</span>
-          <input class="form-order__order btn" type="submit" name="submit" value="Отправить заказ">
+          <div class="form-order__order">
+            <p>Все поля обязательны для заполнения</p>
+            <input class="btn" type="submit" name="submit" value="Отправить заказ">
+          </div>
         </form>
       </section>
     </main>
