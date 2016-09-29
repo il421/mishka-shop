@@ -1,0 +1,47 @@
+.toggle {
+  width: 257px;
+  margin-left: 30px;
+
+  border: 1px solid @line-border-color;
+};
+
+.toggle__prev,
+.toggle__next {
+  display: inline-block;
+
+  width: 126px;
+  height: 50px;
+
+
+  background-color: @main-background-color;
+
+  border: none;
+
+  font-size: 0;
+};
+
+.toggle__prev {
+  background: url("../img/icon-left-arrow.svg") no-repeat;
+  background-position: center;
+  border-right: 1px solid @line-border-color;
+};
+
+.toggle__next {
+  background: url("../img/icon-right-arrow.svg") no-repeat;
+  background-position: center;
+};
+
+@media @tablet-widths {
+  .toggle {
+    width: 257px;
+    margin: 0;
+
+    border: none;
+
+    order: 5;
+  };
+
+  .toggle__prev {
+    border-right: none;
+  };
+};

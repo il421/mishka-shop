@@ -1,0 +1,231 @@
+.form-section {
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+
+  border: none;
+  border-top: 1px solid @blue-text-color;
+};
+
+.form-section__title {
+
+  padding-left: 0;
+  padding-right: 20px;
+
+  .blue-capital-text;
+};
+
+.form-section__type,
+.form-section__color,
+.form-section__name,
+.form-section__phone,
+.form-section__email,
+.form-section__extra {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items:  stretch;
+};
+
+.form-section__type input,
+.form-section__color input {
+  display: none;
+};
+
+.form-section label {
+  .black-bold-text;
+  line-height: 18px;
+};
+
+.form-section__type label,
+.form-section__color label {
+  position: relative;
+
+  margin-top: 30px;
+  padding-left: 60px;
+
+  cursor: pointer;
+};
+
+.form-section__name label {
+  margin-top: 30px;
+};
+
+.form-section__type label::after {
+  position: absolute;
+  content: "";
+
+  top: -5px;
+  left: 0;
+
+  width: 35px;
+  height: 35px;
+
+  border: 2px solid @black-text-color;
+  border-radius: 50%;
+};
+
+.form-section__type input:checked + label::before {
+  position: absolute;
+
+  content: "";
+
+  top: 4px;
+  left: 9px;
+
+  width: 10px;
+  height: 10px;
+
+  border: 5px solid @blue-text-color;
+  border-radius: 50%;
+  background: @blue-text-color;
+};
+
+.form-section__color label::after {
+  position: absolute;
+  content: "";
+
+  top: -10px;
+  left: 0;
+
+  width: 36px;
+  height: 36px;
+
+  border: 2px solid @black-text-color;
+};
+
+.form-section__color input:checked + label::before {
+  position: absolute;
+
+  content: "";
+
+  top: 0;
+  left: 4px;
+
+  width: 36px;
+  height: 36px;
+
+  background: url("../img/icon-tick.svg") no-repeat
+};
+
+.form-section__name input,
+.form-section__phone input,
+.form-section__email input {
+  padding: 15px 0;
+
+  font-size: 17px;
+  line-height: 18px;
+
+  border: none;
+  border-bottom: 2px solid @black-text-color;
+};
+
+.form-section__extra textarea {
+  padding-top: 15px;
+  padding-bottom: 90px;
+  padding-left: 15px;
+  margin-top: 30px;
+
+  font-size: 17px;
+  line-height: 18px;
+
+  border: 2px solid @black-text-color;
+};
+
+.form-section__name div {
+  display: flex;
+  flex-direction: column;
+
+};
+
+@media @tablet-widths {
+  .form-section {
+    position: relative;
+    margin-left: 167px;
+
+    border-top: none;
+  };
+
+  .form-section__title {
+    position: absolute;
+    top: 30px;
+    left: -167px;
+  };
+
+  .form-section label {
+    font-size: 19px;
+    line-height: 18px;
+    font-weight: bold;
+  };
+
+  .form-section__type label,
+  .form-section__color label {
+    margin-top: 60px;
+    padding-left: 80px;
+  };
+
+  .form-section__color label {
+    width: 120px;
+  };
+
+  .form-section__type label::after {
+    top: -15px;
+    left: 0;
+
+    width: 47px;
+    height: 47px;
+  };
+
+  .form-section__type input:checked + label::before {
+    top: -3px;
+    left: 12px;
+
+    width: 17px;
+    height: 17px;
+  };
+
+  .form-section__color label::after {
+    top: -17px;
+    left: 0;
+
+    width: 48px;
+    height: 48px;
+  };
+
+  .form-section__color input:checked + label::before {
+    top: 0;
+    left: 9px;
+  };
+
+  .form-section__color {
+    flex-direction: row;
+    margin-right: 40px;
+  };
+
+  .form-section__name div  {
+    flex-direction: row;
+  };
+
+  .form-section__name input {
+    width: 100%;
+  };
+
+  .form-section__name label {
+    padding-right: 20px;
+  };
+};
+
+@media @desktop-widths {
+
+  .form-section__color {
+    flex-direction: row;
+    margin-right: 140px;
+  };
+};

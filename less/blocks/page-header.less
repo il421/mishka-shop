@@ -1,37 +1,13 @@
 .page-header {
   .container();
+  min-height: 78px;
 
-  min-height: 80px;
-  border-bottom: 2px #e7e7e7 solid;
-
-  &__logo img {
-    height: 36px;
-
-    .container();
-    margin-top: 22px;
-  };
+  background-color: @main-background-color;
+  border-top: 1px @line-border-color solid;
 };
-
 
 @media @tablet-widths {
   .page-header {
-    position: relative;
-
-    min-height: 88px;
+    min-height: 150px;
   };
-
-  .page-header__logo {
-    position: absolute;
-
-    right: 290px;
-    width: 100%;
-  }
 };
-
-@media @desktop-widths {
-  .page-header__logo {
-    position: absolute;
-    right: auto;
-    width: 100%;
-  }
-}

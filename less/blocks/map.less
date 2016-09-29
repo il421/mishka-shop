@@ -1,9 +1,21 @@
 .map {
-  height: 460px;
-  background: @main-background-color url("../../map-mobile@1x.jpg") no-repeat;
+  height: 457px;
+  background: @main-background-color url("../map-mobile@1x.jpg") no-repeat;
   background-position: center;
+};
 
-  &__online {
-    border: none;
+.map__online {
+  border: none;
+};
+
+@media @desktop-widths  {
+  .map {
+    width: 525px;
+    margin: 0;
+    margin-top: 80px;
+    margin-left: 25px;
+    margin-right: 50px;
+
+    order: 4;
   };
 };
