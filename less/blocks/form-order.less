@@ -14,8 +14,22 @@
 };
 
 .form-order__order {
-  padding: 18px 45px;
+  display: flex;
+  flex-direction: column;
+
+  margin: 30px 0;
   margin-bottom: 55px;
+};
+
+.form-order__order input[type="submit"]{
+  width: 256px;
+  padding: 18px 0;
+  margin-top: 24px;
+
+};
+
+.form-order__order p {
+  font-size: 14px;
 };
 
 
@@ -28,23 +42,23 @@
     height: 1385px;
   };
 
-  .form-order__required {
-
-    font-size: 17px;
-    line-height: 30px;
-  };
-
   .form-order__order {
-    padding: 18px 0;
-    width: 226px;
-
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   };
-};
 
-@media @desktop-widths {
-  .form-order {
+  .form-order__order input[type="submit"]{
+    margin-top: 0;
 
-    };
+    order: 1;
+  };
+
+  .form-order__order p {
+    font-size: 14px;
+
+    order: 2;
+  };
 
 };

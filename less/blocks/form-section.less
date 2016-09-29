@@ -6,7 +6,6 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-content: space-between;
   align-items: stretch;
 
   border: none;
@@ -31,7 +30,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-content: space-between;
+  align-content: stretch;
   align-items:  stretch;
 };
 
@@ -53,10 +52,6 @@
   padding-left: 60px;
 
   cursor: pointer;
-};
-
-.form-section__name label {
-  margin-top: 30px;
 };
 
 .form-section__type label::after {
@@ -140,6 +135,12 @@
   border: 2px solid @black-text-color;
 };
 
+.form-section__name div {
+  display: flex;
+  flex-direction: column;
+
+};
+
 @media @tablet-widths {
   .form-section {
     position: relative;
@@ -204,15 +205,17 @@
     margin-right: 40px;
   };
 
+  .form-section__name div  {
+    flex-direction: row;
+    align-items: center;
 
 
+  };
 
+  .form-section__name input {
+    width: 100%;
 
-
-
-
-
-
+  };
 
 
 };
