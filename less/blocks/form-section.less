@@ -54,6 +54,10 @@
   cursor: pointer;
 };
 
+.form-section__name label {
+  margin-top: 30px;
+};
+
 .form-section__type label::after {
   position: absolute;
   content: "";
@@ -207,17 +211,15 @@
 
   .form-section__name div  {
     flex-direction: row;
-    align-items: center;
-
-
   };
 
   .form-section__name input {
     width: 100%;
-
   };
 
-
+  .form-section__name label {
+    padding-right: 20px;
+  };
 };
 
 @media @desktop-widths {
@@ -226,5 +228,4 @@
     flex-direction: row;
     margin-right: 140px;
   };
-
 };
