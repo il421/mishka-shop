@@ -1,8 +1,9 @@
 .modal-form {
   display: none;
   position: fixed;
-  top: 20%;
-  left: 13%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 
   background-color: @main-background-color;
   opacity: 2;
@@ -181,12 +182,5 @@
 
   .modal-form__select input[type="radio"]:checked + label::before {
     border-color: @blue-text-color;
-  };
-};
-
-@media @desktop-widths {
-  .modal-form {
-    top: 50%;
-    left: 29%;
   };
 };

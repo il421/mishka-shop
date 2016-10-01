@@ -54,7 +54,11 @@
     height: 459px;
     margin: 0;
 
-    background: url(../img/review@1x.jpg) no-repeat @main-background-color;
+    background: url(../img/review@1x.jpg) no-repeat;
+
+    @media @retina {
+      background: url("../img/review@2x.jpg") no-repeat;
+    };
   };
 
   .reviews__title {
