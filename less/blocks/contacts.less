@@ -8,7 +8,10 @@
   .container();
   height: 900px;
 
-  border-top: 2px solid @line-border-color;
+  border-top: 7px solid transparent;
+  border-image-source: url("../img/bg-zigzag-line.svg");
+  border-image-slice:  100;
+  border-image-repeat: round;
 };
 
 .contacts__title {
@@ -89,6 +92,9 @@
 @media @tablet-widths {
   .contacts {
     height: 930px;
+
+    border-top: 16px solid transparent;
+    border-image-slice:  25;
   };
 
   .contacts__title {
@@ -140,6 +146,9 @@
     align-items: baseline;
 
     height: 640px;
+
+    border-top: 20px solid transparent;
+    border-image-slice:  25;
   };
 
   .contacts__title {

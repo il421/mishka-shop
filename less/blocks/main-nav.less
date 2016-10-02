@@ -124,6 +124,16 @@ opacity: (0.3);
 
       background: url("../img/icon-search.svg") no-repeat;
     };
+    &:hover::before {
+    background: url("../img/icon-search-hover.svg") no-repeat;
+  };
+    &:active::before {
+    opacity: (0.3);
+  };
+
+    .catalog-item__price a:active::after {
+      opacity: (0.3);
+    };
   };
 
   &--chart {
@@ -139,6 +149,13 @@ opacity: (0.3);
       height: 20px;
 
       background: url("../img/icon-cart.svg") no-repeat;
+    };
+
+      &:hover::before {
+      background: url("../img/icon-cart-hover.svg") no-repeat;
+    };
+      &:active::before {
+      opacity: (0.3);
     };
   };
 };

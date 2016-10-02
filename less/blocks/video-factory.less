@@ -1,4 +1,6 @@
 .video-factory {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -10,6 +12,14 @@
   margin-bottom: 60px;
 
   border: 1px solid @line-border-color;
+};
+
+.video-factory:hover {
+  box-shadow: 0 10px 20px -2px @text-hover-active;
+};
+
+.video-factory:active {
+  box-shadow: 0 5px 10px -2px @text-hover-active;
 };
 
 .video-factory__title {
@@ -32,10 +42,12 @@
 };
 
 .video-factory__description {
-  font-size: 13px;
+  position: relative;
+
   margin: 0 40px;
   margin-bottom: 25px;
 
+  font-size: 13px;
 };
 
 .video-factory__video {
@@ -45,7 +57,31 @@
 
   @media @retina {
     background: url("../img/video-mobile@2x.jpg") no-repeat;
-  };
+  }
+};
+
+.video-factory input {
+    position: absolute;
+    content: "";
+    top: 140px;
+    left: 85px;
+
+    width: 100px;
+    height: 75px;
+
+    border: none;
+
+    background: url("../img/icon-play.svg") no-repeat;
+    background-position: center;
+};
+
+.video-factory input:hover {
+  transform: scale(1.2);
+};
+
+.video-factory input:active {
+  transform: scale(0.8);
+  opacity: (0.7);
 };
 
 .video-factory__order {
@@ -99,6 +135,11 @@
     };
 
     order: 1;
+  };
+
+  .video-factory input {
+    top: 200px;
+    left: 280px;
   };
 
   .video-factory__order {
