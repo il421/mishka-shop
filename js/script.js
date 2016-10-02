@@ -13,6 +13,7 @@ navToggle.addEventListener('click', function() {
     navMain.classList.remove('main-nav--opened');
   }
 });
+
 /*Module Form*/
 var link = document.querySelector(".hits__order");
 var popup = document.querySelector(".modal-form");
