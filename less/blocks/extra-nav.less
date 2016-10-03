@@ -10,25 +10,21 @@
 
 .extra-nav__block {
   &--dark {
-    height: 103px;
+
     background-color: @block-color;
   };
 };
 
 .extra-nav__block {
   &--light {
-    height: 103px;
+
     background-color: darken(@block-color, 10%);
   };
 };
-/*
-.extra-nav__block:hover {
-  height: 108px;
-
-};
 
 .extra-nav__block a:hover {
-  padding-top: 33px;
+  padding-bottom: 23px;
+  padding-top: 38px;
 };
 
 .extra-nav__block a:active {
@@ -36,9 +32,9 @@
 };
 
 .extra-nav__block--dark a:hover::before {
-  top: 25px;
+  top: 30px;
 };
-*/
+
 .extra-nav__block a {
   display: block;
   position: relative;
@@ -87,29 +83,35 @@
 
 @media @tablet-widths {
   .extra-nav {
-    flex-direction: row;
+    position: relative;
 
-    margin-top: 373px;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 130px;
+
     width: 668px;
+
+    &::before {
+      position: absolute;
+      content: "";
+
+      top: 115px;
+      right: -50px;
+
+      width: 768px;
+      height: 30px;
+
+      background: url("../img/bg-zigzag-fill.svg") no-repeat;
+    };
   };
 
   .extra-nav__block {
     width: 344px;
-    height: 117px;
-  };
-
-  .extra-nav__block a {
-    padding: 35px 0;
-    padding-right: 185px;
-    padding-left: 35px;
-  };
-/*
-  .extra-nav__block:hover {
-    height: 122px;
   };
 
   .extra-nav__block a:hover {
-    padding-top: 38px;
+    padding-bottom: 30px;
+    padding-top: 45px;
   };
 
   .extra-nav__block a:active {
@@ -117,9 +119,16 @@
   };
 
   .extra-nav__block--dark a:hover::before {
-    top: 35px;
+    top: 40px;
   };
-*/
+
+  .extra-nav__block a {
+    padding: 35px 0;
+    padding-right: 185px;
+    padding-left: 35px;
+  };
+
+
   .extra-nav__block--dark a::before {
     top: 30px;
     left: 260px;
@@ -132,8 +141,17 @@
 
 @media @desktop-widths {
   .extra-nav {
-    margin-top: 393px;
     width: 1050px;
+
+    &::before {
+      top: 115px;
+      right: -50px;
+
+      width: 1150px;
+      height: 30px;
+
+      background: url("../img/bg-zigzag-fill.svg") no-repeat;
+    };
   };
 
   .extra-nav__block {
@@ -147,6 +165,19 @@
 
     font-size: 20px;
     line-height: 30px;
+};
+
+.extra-nav__block a:hover {
+  padding-bottom: 25px;
+  padding-top: 40px;
+};
+
+.extra-nav__block a:active {
+  opacity: (0.3);
+};
+
+.extra-nav__block--dark a:hover::before {
+  top: 40px;
 };
 
   .extra-nav__block--dark a::before {

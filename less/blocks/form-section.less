@@ -172,12 +172,22 @@
   border-bottom: 2px solid @blue-text-color;
 };
 
+.form-section__name input:invalid,
+.form-section__phone input:invalid,
+.form-section__email input:invalid {
+  border-bottom: 2px solid @text-invalid;
+};
+
 .form-section__extra textarea:hover {
   border: 2px solid @blue-text-color;
 };
 
 .form-section__extra textarea:focus {
   border: 2px solid @blue-text-color;
+};
+
+.form-section__extra textarea:invalid {
+  border: 2px solid @text-invalid;
 };
 
 .form-section__phone {
@@ -228,6 +238,38 @@
     margin-left: 167px;
 
     border-top: none;
+  };
+
+  .form-section:nth-child(2) {
+    &::after {
+      position: absolute;
+      content: "";
+
+      top: -20px;
+      right: -50px;
+
+      width: 768px;
+      height: 325px;
+
+      background-color: @extra-backgroung-color;
+      z-index: -100;
+    };
+  };
+
+  .form-section:nth-child(4) {
+    &::after {
+      position: absolute;
+      content: "";
+
+      top: -40px;
+      right: -50px;
+
+      width: 768px;
+      height: 250px;
+
+      background-color: @extra-backgroung-color;
+      z-index: -100;
+    };
   };
 
   .form-section__title {
@@ -283,6 +325,7 @@
 
   .form-section__color {
     flex-direction: row;
+
     margin-right: 40px;
   };
 
@@ -298,15 +341,39 @@
     padding-right: 20px;
   };
 
-  .form-section input::placeholder {
+  .form-section input{
     padding-left: 15px;
+  };
+
+  .form-section__phone input,
+  .form-section__email input {
+    background-color: @extra-backgroung-color;
   };
 };
 
 @media @desktop-widths {
 
   .form-section__color {
-    flex-direction: row;
     margin-right: 140px;
+  };
+
+  .form-section:nth-child(2) {
+    &::after {
+      top: -20px;
+      right: -50px;
+
+      width: 1150px;
+      height: 250px;
+    };
+  };
+
+  .form-section:nth-child(4) {
+    &::after {
+      top: -20px;
+      right: -50px;
+
+      width: 1150px;
+      height: 250px;
+    };
   };
 };

@@ -8,6 +8,8 @@
   justify-content: space-between;
 
   height: 600px;
+
+  background: none;
 };
 
 .reviews__item {
@@ -53,12 +55,6 @@
 
     height: 459px;
     margin: 0;
-
-    background: url(../img/review@1x.jpg) no-repeat;
-
-    @media @retina {
-      background: url("../img/review@2x.jpg") no-repeat;
-    };
   };
 
   .reviews__title {
@@ -108,6 +104,16 @@
 
   .reviews__wrapper {
     margin: 0 50px;
+
+    background: url("../img/review@1x.jpg") no-repeat @main-background-color;
+    background-position: left;
+    background-size: contain;
+
+    @media @retina {
+      background: url("../img/review@2x.jpg") no-repeat @main-background-color;
+      background-position: left;
+      background-size: contain;
+    };
   };
 
   .reviews__title {
