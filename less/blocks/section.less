@@ -1,24 +1,14 @@
 .section {
-  .container();
-  height: 178px;
-};
-
-.section__title {
   position: relative;
-  padding: 75px 0 80px 0;
 
-  .black-title-text;
-  font-size: 27px;
-  text-align: center;
-
-  z-index: 100;
+  .container();
 
   &::after {
     position: absolute;
     content: "";
-
     top: 0;
     right: 0;
+    margin-bottom: 30px;
 
     width: 320px;
     height: 179px;
@@ -28,6 +18,16 @@
 
     z-index: -100;
   };
+};
+
+.section__title {
+  padding: 75px 0 73px 0;
+
+  .black-title-text;
+  font-size: 27px;
+  text-align: center;
+
+  z-index: 100;
 };
 
 @media @tablet-widths {
@@ -50,7 +50,6 @@
     &::before {
       position: absolute;
       content: "";
-
       top: 150px;
       right: 0;
 

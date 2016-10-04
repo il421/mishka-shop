@@ -1,6 +1,7 @@
 .page-footer__wrapper {
   .container();
   min-height: 160px;
+
   background-color: @extra-backgroung-color;
 };
 
@@ -22,7 +23,6 @@
 
 .page-footer__social-links a {
   display: block;
-
   width: 25px;
   height: 30px;
   margin-top: 10px;
@@ -50,8 +50,8 @@
 
 .page-footer__copyright a {
   position: relative;
-  display: block;
 
+  display: block;
   margin: 0 39px;
   margin-top: 22px;
   padding: 8px 0;
@@ -61,15 +61,14 @@
   line-height: 19px;
   text-decoration: none;
   font-weight: bold;
+
   color: @black-text-color;
 
   &::after {
     position: absolute;
-
+    content: "";
     right:0;
     top: 0;
-
-    content: "";
 
     width: 27px;
     height: 34px;
@@ -89,6 +88,7 @@
   };
   .page-footer__logo--visually-hidden {
     display: block;
+
     visibility: visible;
   };
 
@@ -117,7 +117,6 @@
   .page-footer__copyright {
     float: right;
     width: 185px;
-
     min-height: auto;
     margin-top: 60px;
     margin-right: 50px;
