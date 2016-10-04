@@ -136,10 +136,12 @@
     background-size: cover;
     background-position: center;
 
-    @media @retina {
-      background: url("../img/video-tablet@2x.jpg") no-repeat @blue-text-color;
-      background-size: cover;
-      background-position: center;
+    @media (min-width: 768px) {
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background: url("../img/video-tablet@2x.jpg") no-repeat @blue-text-color;
+        background-size: cover;
+        background-position: center;
+      };
     };
 
     order: 1;
@@ -204,10 +206,12 @@
     background-size: cover;
     background-position: center;
 
-    @media @retina {
-      background: url("../img/video-desktop@2x.jpg") no-repeat @blue-text-color;
-      background-size: cover;
-      background-position: center;
+    @media (min-width: 1150px) {
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background: url("../img/video-desktop@2x.jpg") no-repeat @blue-text-color;
+        background-size: cover;
+        background-position: center;
+      };
     };
   };
 
