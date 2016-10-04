@@ -5,8 +5,7 @@
 };
 
 .page-footer__logo--visually-hidden {
-  position: absolute;
-  visibility: hidden;
+  display: none;
 };
 
 .page-footer__social-links, .page-footer__copyright {
@@ -14,39 +13,35 @@
   min-height: 80px;
 };
 
-.page-footer__social-links__link {
-  display: inline-block;
+.page-footer__social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+};
+
+.page-footer__social-links a {
+  display: block;
 
   width: 25px;
   height: 30px;
-
-  margin-right: 40px;
+  margin-top: 10px;
 
   font-size: 0;
 
-  &:first-child {
-    margin-left: 50px;
-    margin-top: 30px;
+  &:nth-child(2) {
+    margin-left: 40px;
+    margin-right: 25px;
+    margin-top: 5px;
   };
+};
 
-  &:last-child {
-    margin-right: 0;
-  };
+.page-footer__link:hover .page-footer__icon {
+  fill: @blue-text-color;
+};
 
-  &--vk {
-    background: url("../img/icon-insta.svg") no-repeat;
-    background-position: center;
-  };
-
-  &--fb {
-    background: url("../img/icon-fb.svg") no-repeat;
-    background-position: center;
-  };
-
-  &--in {
-    background: url("../img/icon-twitter.svg") no-repeat;
-    background-position: center;
-  };
+.page-footer__link:active .page-footer__icon {
+  opacity: (0.3);
 };
 
 .page-footer__copyright {
@@ -83,13 +78,17 @@
   };
 };
 
+.page-footer__copyright a:active {
+  opacity: (0.3);
+};
+
 @media @tablet-widths {
   .page-footer__wrapper {
     min-height: 145px;
     .clearfix();
   };
   .page-footer__logo--visually-hidden {
-    position: static;
+    display: block;
     visibility: visible;
   };
 
@@ -100,18 +99,19 @@
     margin-top: 60px;
   };
 
+  .page-footer__link:hover .page-footer__logo-mishka {
+    fill: @blue-text-color;
+  };
+
+  .page-footer__link:active .page-footer__logo-mishka  {
+    opacity: (0.3);
+  };
+
   .page-footer__social-links {
     float: left;
     min-height: auto;
     margin-left: 155px;
     margin-top: 60px;
-  };
-
-  .page-footer__social-links__link {
-    &:first-child {
-      margin-top: 0;
-      margin-left: 0;
-    };
   };
 
   .page-footer__copyright {

@@ -1,5 +1,6 @@
 .toggle {
   width: 257px;
+  margin: 30px 0;
   margin-left: 30px;
 
   border: 1px solid @line-border-color;
@@ -12,9 +13,7 @@
   width: 126px;
   height: 50px;
 
-
   background-color: @main-background-color;
-
   border: none;
 
   font-size: 0;
@@ -22,13 +21,30 @@
 
 .toggle__prev {
   background: url("../img/icon-left-arrow.svg") no-repeat;
+  fill: #ffb600;
   background-position: center;
   border-right: 1px solid @line-border-color;
+};
+
+.toggle__prev:hover {
+  opacity: (0.6);
+};
+
+.toggle__prev:active {
+  opacity: (0.3);
 };
 
 .toggle__next {
   background: url("../img/icon-right-arrow.svg") no-repeat;
   background-position: center;
+};
+
+.toggle__next:hover {
+  opacity: (0.6);
+};
+
+.toggle__next:active {
+  opacity: (0.3);
 };
 
 @media @tablet-widths {
