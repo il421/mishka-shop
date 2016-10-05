@@ -71,21 +71,25 @@
 
     border-bottom: 16px solid transparent;
     border-image-slice:  25;
+    position: relative;
   };
 
   .hits__wrapper {
-    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 500px;
+    justify-content: flex-start;
+
+    height: 510px;
     padding: 0;
+    margin: 0;
+    padding-top: 45px;
   };
 
   .hits__title-category {
     width: 668px;
-    height: 40px;
-    margin: 0 50px;
+    height: 60px;
+    margin-left: 50px;
+    margin-bottom: 40px;
 
     order: 1;
   };
@@ -116,6 +120,7 @@
     margin: 0;
     padding: 0;
     margin-left: 50px;
+    margin-bottom: 40px;
     width: 300px;
     height: 85px;
 
@@ -127,23 +132,25 @@
 
   .hits__picture {
     position: absolute;
-    top: 155px;
-    right: 20px;
+    top: 150px;
+    right: 50px;
 
     width: 335px;
     height: 405px;
+    margin: 0;
   };
 
   .hits__options {
     padding: 0;
     margin: 0;
     margin-left: 50px;
+    margin-bottom: 60px;
     width: 285px;
 
     line-height: 20px;
     border-collapse: collapse;
 
-    order: 3;
+    order: 4;
   };
 
   .hits__options td {
@@ -154,13 +161,14 @@
     margin: 0;
     padding: 0;
     margin-left: 50px;
+    margin-bottom: 30px;
     width: 285px;
     height: 24px;
 
     font-size: 20px;
     text-align: center;
 
-    order: 4;
+    order: 5;
   };
 
   .hits__order {
@@ -171,28 +179,27 @@
 
     text-align: center;
 
-    order: 5;
+    order: 6;
   };
 };
 
 @media @desktop-widths {
   .hits {
-    position: relative;
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap:  wrap;
-    justify-content: space-between;
-    align-items: flex-start;
     height: 780px;
 
     border-bottom: 20px solid transparent;
     border-image-slice:  25;
   };
 
+    .hits__wrapper {
+      height: 637px;
+      padding-top: 125px;
+      padding-bottom: 60px;
+
+    };
+
   .hits__picture {
-    position: absolute;
-    top: 40px;
+    top: 73px;
 
     width: 525px;
     height: 635px;
@@ -206,14 +213,13 @@
     width: 900px;
     height: 50px;
     margin: 0;
-    margin-top: 105px;
-    margin-bottom: 35px;
+    margin-left: 220px;
+    margin-bottom: 55px;
   };
 
   .hits__title {
     width: auto;
     margin: 0;
-
 
     .black-title-text-desktop;
 
@@ -223,24 +229,25 @@
   .hits__category {
     position: absolute;
     top: 15px;
-    left: -45px;
+    left: -270px;
   };
 
   .hits__description {
-
+    margin-left: 225px;
+    margin-bottom: 55px;
   };
 
   .hits__options {
-
+    margin-left: 225px;
+    margin-bottom: 110px;
   };
 
   .hits__price {
-
-
+    margin-left: 230px;
+    margin-bottom: 35px;
   };
 
   .hits__order {
-
-
+    margin-left: 225px;
   };
 };
