@@ -19,19 +19,6 @@
   };
 };
 
-.extra-nav__block a:hover {
-  padding-bottom: 33px;
-  padding-top: 33px;
-};
-
-.extra-nav__block a:active {
-  opacity: (0.3);
-};
-
-.extra-nav__block--dark a:hover::before {
-  top: 25px;
-};
-
 .extra-nav__block a {
   position: relative;
 
@@ -74,6 +61,19 @@
   background: url("../img/icon-toy.svg") no-repeat;
 };
 
+.extra-nav__block a:hover {
+  padding-bottom: 33px;
+  padding-top: 33px;
+};
+
+.extra-nav__block a:active {
+  opacity: (0.3);
+};
+
+.extra-nav__block--dark a:hover::before {
+  top: 25px;
+};
+
 @media @tablet-widths {
   .extra-nav {
     position: relative;
@@ -86,31 +86,20 @@
     &::before {
       position: absolute;
       content: "";
-      top: 115px;
+      top: 120px;
       right: -50px;
 
       width: 768px;
-      height: 30px;
+      height: 20px;
 
-      background: url("../img/bg-zigzag-fill.svg") no-repeat;
+      background: url("../img/bg-zigzag-fill.svg") repeat;
+      background-position: center top;
+      background-size: contain;
     };
   };
 
   .extra-nav__block {
     width: 344px;
-  };
-
-  .extra-nav__block a:hover {
-    padding-bottom: 40px;
-    padding-top: 40px;
-  };
-
-  .extra-nav__block a:active {
-    opacity: (0.3);
-  };
-
-  .extra-nav__block--dark a:hover::before {
-    top: 35px;
   };
 
   .extra-nav__block a {
@@ -127,6 +116,19 @@
   .extra-nav__block--light a::before {
     right: 30px;
   };
+
+    .extra-nav__block a:hover {
+      padding-bottom: 40px;
+      padding-top: 40px;
+    };
+
+    .extra-nav__block a:active {
+      opacity: (0.3);
+    };
+
+    .extra-nav__block--dark a:hover::before {
+      top: 35px;
+    };
 };
 
 @media @desktop-widths {

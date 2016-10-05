@@ -1,6 +1,9 @@
-.page-footer__wrapper {
+.page-footer {
   .container();
-  min-height: 160px;
+};
+
+.page-footer__wrapper {
+  height: 160px;
 
   background-color: @extra-backgroung-color;
 };
@@ -31,7 +34,7 @@
 
   &:nth-child(2) {
     margin-left: 40px;
-    margin-right: 25px;
+    margin-right: 30px;
     margin-top: 5px;
   };
 };
@@ -83,20 +86,27 @@
 
 @media @tablet-widths {
   .page-footer__wrapper {
-    min-height: 145px;
-    .clearfix();
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 143px;
   };
+
   .page-footer__logo--visually-hidden {
     display: block;
+    margin-left: 50px;
+    width: 100px;
 
     visibility: visible;
   };
 
-  .page-footer__logo {
-    float: left;
-    width: auto;
-    margin-left: 50px;
-    margin-top: 60px;
+  .page-footer__logo a {
+    display: block;
+    width: 100px;
+    height: 40px;
   };
 
   .page-footer__link:hover .page-footer__logo-mishka {
@@ -108,24 +118,21 @@
   };
 
   .page-footer__social-links {
-    float: left;
-    min-height: auto;
-    margin-left: 155px;
-    margin-top: 60px;
+    margin: 0;
+    margin-left: 85px;
   };
 
   .page-footer__copyright {
-    float: right;
     width: 185px;
-    min-height: auto;
-    margin-top: 60px;
+    margin: 0;
     margin-right: 50px;
+
     border: none;
   };
 
   .page-footer__copyright a {
     margin: 0;
-    padding-right: ;
+    margin-top: 25px;
   };
 };
 
