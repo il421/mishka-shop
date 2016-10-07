@@ -1,25 +1,28 @@
 .main-catalog {
+  .container();
+  margin-top: 30px;
+};
+
+.main-catalog__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  .container();
-  margin-top: 30px;
-  height: 1205px;
+  margin: 0 auto;
 };
 
 @media @tablet-widths {
   .main-catalog {
     margin-top: 65px;
-    height: 1110px;
   };
 };
 
 @media @desktop-widths {
-  .main-catalog {
+  .main-catalog__wrapper {
     flex-direction: row;
-    justify-content: space-between;
+    flex-flow: wrap;
+
+    width: 1050px;
     margin-top: 95px;
-    height: 658px;
   };
 };
