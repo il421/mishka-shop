@@ -264,6 +264,42 @@
     left: -167px;
   };
 
+  .form-section:nth-child(2) {
+    margin-top: 150px;
+  };
+
+  .form-section:nth-child(3) {
+    margin-top: 130px;
+  };
+
+  .form-section:nth-child(3) .form-section__title {
+    top: 15px;
+  };
+
+  .form-section:nth-child(4) {
+    margin-top: 125px;
+  };
+
+  .form-section:nth-child(4) .form-section__title {
+    top: 15px;
+  };
+
+  .form-section:nth-child(5) {
+    margin-top: 25px;
+  };
+
+  .form-section:nth-child(5) .form-section__title {
+    top: 15px;
+  };
+
+  .form-section:nth-child(6) {
+    margin-top: 130px;
+  };
+
+  .form-section:nth-child(6) .form-section__title {
+    top: 20px;
+  };
+
   .form-section label {
     font-size: 19px;
     line-height: 18px;
@@ -293,13 +329,13 @@
     flex-direction: row;
     justify-content: space-between;
     align-content: space-between;
-    height: 186px;
+    height: 167px;
     margin-right: 40px;
 
     &::after {
       position: absolute;
       content: "";
-      top: -75px;
+      top: -80px;
       right: -90px;
 
       width: 768px;
@@ -350,8 +386,7 @@
   };
 
   .form-section__name {
-    height: 210px;
-    margin-bottom: 0;
+    height: 200px;
   };
 
   .form-section__name div  {
@@ -364,7 +399,7 @@
   };
 
   .form-section__name label {
-    padding-right: 20px;
+    padding-right: 25px;
   };
 
   .form-section__phone input,
@@ -379,7 +414,7 @@
       position: absolute;
       content: "";
 
-      top: -50px;
+      top: -55px;
       right: -50px;
 
       width: 768px;
@@ -393,27 +428,40 @@
 };
 
 @media @desktop-widths {
-  .form-section__color {
-    margin-right: 140px;
+  .form-section {
+    margin-left: 175px;
   };
 
-  .form-section:nth-child(2) {
+  .form-section__title {
+    position: absolute;
+    top: 0;
+    left: -110px;
+  };
+
+  .form-section__color {
+    margin-right: 145px;
+    height: 93px;
+
     &::after {
-      top: -20px;
-      right: -50px;
+      top: -80px;
+      right: -195px;
 
       width: 1150px;
       height: 250px;
     };
   };
 
-  .form-section:nth-child(4) {
-    &::after {
-      top: -20px;
-      right: -50px;
+  .form-section__name,
+  .form-section__phone,
+  .form-section__email,
+  .form-section__extra {
+    margin-right: 175px;
+  };
 
+  .form-section__phone {
+    &::after {
       width: 1150px;
-      height: 250px;
+      right: -220px;
     };
   };
 };
