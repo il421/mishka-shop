@@ -1,11 +1,10 @@
 .about-us {
   .container();
-  height: 830px;
+  margin-top: 25px;
 };
 
 .about-us__title {
   margin-left: 30px;
-  margin-top: 25px;
   margin-bottom: 30px;
 
   .black-title-text;
@@ -16,30 +15,26 @@
   flex-direction: column;
   justify-content: space-between;
 
-  height: 712px;
+  height: 710px;
   margin: 0 30px;
   padding: 0;
 
-    list-style: none;
+  list-style: none;
   };
 
 .about-us__item {
   position: relative;
 
-  display: inline-block;
-
   padding-top: 50px;
-  width: 260px;
+
 
   text-align: left;
-
   .black-bold-text;
   line-height: auto;
 
   &::before {
     position: absolute;
     content: "";
-
     top: 0;
     left: 0;
 
@@ -77,13 +72,9 @@
 };
 
 @media @tablet-widths {
-  .about-us {
-    height: 650px;
-  };
-
   .about-us__title {
     margin-left: 50px;
-    margin-top: 60px;
+    margin-top: 50px;
     margin-bottom: 50px;
 
     .black-title-text-tablet;
@@ -94,14 +85,14 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-
-    height: 410px;
+    align-content:  flex-start;
+    height: 435px;
     margin-left: 50px;
     };
 
   .about-us__item {
-    margin-right: 50px;
-    margin-bottom: 20px;
+    margin-right: 100px;
+    margin-bottom: 25px;
 
     font-size: 20px;
   };
@@ -110,17 +101,22 @@
 
 @media @desktop-widths {
   .about-us {
-    height: 630px;
+    height: 600px;
+    margin-top: 0;
   };
 
   .about-us__title {
-    margin-left: 225px;
+    margin-top: 65px;
+    margin-bottom: 50px;
+    margin-left: 221px;
     .black-title-text-desktop;
   };
 
-
-
   .about-us__list {
     margin: 0 225px;
+  };
+
+  .about-us__item {
+    margin-right: 120px;
   };
 };

@@ -1,10 +1,11 @@
 .modal-form {
   display: none;
+
   position: fixed;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
 
+  transform: translate(-50%, -50%);
   background-color: @main-background-color;
   opacity: 2;
 
@@ -20,21 +21,17 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
   width: 320px;
   height: 335px;
   margin: 0 auto;
+  margin-bottom: 20px;
 
   border-top: 1px solid @line-border-color;
   box-shadow: 0 10px 10px -9px @text-hover-active;
-
-  margin-bottom: 20px;
 };
-
 
 .modal-form__title {
   display: inline-block;
-
   margin: 0 80px;
   margin-top: 50px;
 
@@ -74,7 +71,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-
   width: 260px;
 };
 
@@ -93,7 +89,6 @@
   &::before {
     position: absolute;
     content: "";
-
     top: -20px;
     right: -34px;
 
@@ -108,7 +103,6 @@
   border-color: @text-hover-active;
 };
 
-
 .modal-form__select input[type="radio"]:checked + label::before {
   border-color: @blue-text-color;
 };
@@ -116,10 +110,9 @@
 @media @tablet-widths {
   .modal-form__select {
     width: 567px;
+    margin-bottom: 20px;
 
     box-shadow: 0 10px 20px -2px @text-hover-active;
-
-    margin-bottom: 20px;
   };
 
   .modal-form__title {
@@ -164,7 +157,6 @@
     &::before {
       position: absolute;
       content: "";
-
       top: -20px;
       right: -50px;
 
@@ -178,7 +170,6 @@
   .modal-form__select label:hover::before {
     border-color: @text-hover-active;
   };
-
 
   .modal-form__select input[type="radio"]:checked + label::before {
     border-color: @blue-text-color;

@@ -15,7 +15,7 @@ navToggle.addEventListener('click', function() {
 });
 
 /*Module Form*/
-var link = document.querySelector(".hits__order");
+var link = document.querySelector(".modal-form__link");
 var popup = document.querySelector(".modal-form");
 var bg = document.querySelector(".modal-wrapper");
 

@@ -9,14 +9,13 @@
 .toggle__prev,
 .toggle__next {
   display: inline-block;
-
   width: 126px;
   height: 50px;
 
+  font-size: 0;
+
   background-color: @main-background-color;
   border: none;
-
-  font-size: 0;
 };
 
 .toggle__prev {
@@ -49,15 +48,28 @@
 
 @media @tablet-widths {
   .toggle {
-    width: 257px;
+    width: 167px;
     margin: 0;
+    margin-right: 50px;
 
     border: none;
 
     order: 5;
   };
 
+  .toggle__prev,
+  .toggle__next {
+    width: 80px;
+  };
+
   .toggle__prev {
     border-right: none;
+  };
+};
+
+@media @desktop-widths {
+  .toggle {
+    margin-right: 0;
+    order: 5;
   };
 };

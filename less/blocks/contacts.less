@@ -1,12 +1,8 @@
 .contacts {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;;
 
   .container();
-  height: 842px;
+  height: 895px;
   margin-top: 30px;
-  margin-bottom: 25px;
 
   border-top: 7px solid transparent;
   border-image-source: url("../img/bg-zigzag-line.svg");
@@ -14,8 +10,16 @@
   border-image-repeat: round;
 };
 
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 820px;
+  margin-top: 35px;
+};
+
 .contacts__title {
-  margin-left: 30px;
+  margin: 0 30px;
 
   .black-title-text;
   font-size: 18px;
@@ -23,9 +27,8 @@
 
 .contacts__address {
   display: block;
-
   width: 260px;
-  margin-left: 30px;
+  margin: 0 30px;
 
   line-height: 30px;
 };
@@ -51,7 +54,7 @@
 };
 
 .contacts__address td:last-child {
-  width: 180px;
+  width: 185px;
 };
 
 .contacts__address a {
@@ -63,11 +66,11 @@
   &::before {
     position: absolute;
     content: "";
-    height: 1px;
-    width: 165px;
-
     bottom: -5px;
     right: 0;
+
+    height: 1px;
+    width: 180px;
 
     background-color: @blue-text-color;
   };
@@ -86,26 +89,29 @@
 };
 
 .contacts__write {
-  padding: 18px 50px;
+  width: 258px;
   margin: 0 30px;
-
-
-  text-align: center;
+  padding: 16px 0;
 };
 
 
 @media @tablet-widths {
   .contacts {
-    height: 930px;
+    height: 928px;
 
     border-top: 16px solid transparent;
     border-image-slice:  25;
   };
 
+  .contacts__wrapper {
+    height: 810px;
+    margin-top: 65px;
+  };
+
   .contacts__title {
     position: relative;
 
-    margin-left: 50px;
+    margin: 0 50px;
     padding-right: 450px;
 
     .black-title-text-tablet;
@@ -113,9 +119,8 @@
     &::before {
       position: absolute;
       content: "";
-
-      top: -10px;
-      right: 50px;
+      top: -15px;
+      right: 0;
 
       width: 50px;
       height: 80px;
@@ -126,86 +131,118 @@
 
   .contacts__address {
     width: 668px;
-    margin-left: 50px;
+    margin: 0 50px;
 
     font-size: 17px;
   };
 
   .contacts__address tbody {
     display: flex;
-    justify-content: space-between;
+    justify-content:  flex-start;
   };
+
 
   .contacts__address tr:first-child {
     margin-bottom: 0;
+    margin-right: 35px;
   };
 
   .contacts__address td:last-child {
-    width: 200px;
-    margin-left: 20px;
+    width: 225px;
+    margin-left: 23px;
   };
 
   .contacts__address a {
     &::before {
-      width: 190px;
+      width: 205px;
     };
   };
 
   .contacts__write {
-    margin: 55px 270px;
-    padding: 18px 39px;
+    margin: 0;
+    margin: 0 268px;
+
+    padding: 17px 0;
+    width: 226px;
   };
 };
 
 @media @desktop-widths {
   .contacts {
-    flex-direction:  column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-end;
-    align-items: baseline;
-
     height: 640px;
 
     border-top: 20px solid transparent;
-    border-image-slice:  25;
+    border-image-slice: 25;
+  };
+
+  .contacts__wrapper {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    align-content: flex-end;
+    align-items: baseline;
+    height: 640px;
+    margin: 0;
   };
 
   .contacts__title {
-    .black-title-text-desktop;
-    margin: 0;
-    margin-top: 153px;
-    margin-bottom: 43px;
+    position: relative;
 
-    order: 1;
+    margin: 0;
+    margin-top: 150px;
+    margin-bottom: 45px;
+
+    margin-right: 80px;
+
+    .black-title-text-desktop;
 
     &::before {
       top: -10px;
-      left: -150px;
+      right: 330px;
     };
+
+    order: 1;
   };
 
   .contacts__address {
-    width: 300px;
+    display: block;
+    width: 260px;
+    margin: 0;
+    margin-bottom: 80px;
+
+    line-height: 30px;
 
     order: 2;
   };
 
   .contacts__address tbody {
     display: block;
+    width: 340px;
+  };
+
+  .contacts__address tr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items:  flex-start;
+
+    vertical-align: top;
   };
 
   .contacts__address tr:first-child {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+  };
+
+  .contacts__address td {
+    display: block;
   };
 
   .contacts__address td:last-child {
-    margin: 0;
+    width: 224px;
   };
 
   .contacts__write {
-    margin:0;
-    margin-top: 83px;
+    margin: 0;
 
     order: 3;
   };
