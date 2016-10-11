@@ -6,9 +6,14 @@
   align-items: stretch;
   padding: 0;
   margin: 0;
+  margin-bottom: 36px;
 
   border: none;
   border-top: 1px solid @blue-text-color;
+};
+
+.form-section:last-child {
+  margin-bottom: 0;
 };
 
 .form-section__title {
@@ -47,8 +52,8 @@
 };
 
 .form-section__type {
-  height: 90px;
-  margin-top: 30px;
+  min-height: 85px;
+  margin-top: 35px;
 };
 
 .form-section__type label {
@@ -56,7 +61,7 @@
 };
 
 .form-section__color {
-  height: 322px;
+  min-height: 329px;
   margin-top: 35px;
 };
 
@@ -67,7 +72,7 @@
 .form-section__type label::after {
   position: absolute;
   content: "";
-  top: -5px;
+  top: -7px;
   left: 0;
 
   width: 35px;
@@ -92,11 +97,11 @@
 .form-section__type input:checked + label::before {
   position: absolute;
   content: "";
-  top: 4px;
-  left: 9px;
+  top: 5px;
+  left: 11px;
 
-  width: 10px;
-  height: 10px;
+  width: 6px;
+  height: 6px;
 
   border: 5px solid @blue-text-color;
   border-radius: 50%;
@@ -253,7 +258,9 @@
 @media @tablet-widths {
   .form-section {
     position: relative;
+
     margin-left: 167px;
+    margin-bottom: 0;
 
     border-top: none;
   };
@@ -325,11 +332,11 @@
 
   .form-section__color {
     position: relative;
-
+    
     flex-direction: row;
     justify-content: space-between;
     align-content: space-between;
-    height: 167px;
+    min-height: 167px;
     margin-right: 40px;
 
     &::after {
@@ -440,7 +447,7 @@
 
   .form-section__color {
     margin-right: 145px;
-    height: 93px;
+    min-height: 93px;
 
     &::after {
       top: -80px;

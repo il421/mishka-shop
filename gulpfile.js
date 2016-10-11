@@ -38,7 +38,7 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
-gulp.task("images", function(){
+gulp.task("images", function() {
   return gulp.src("build/img/**/*.{png,jpg,gif}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
@@ -47,7 +47,7 @@ gulp.task("images", function(){
     .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("symbols", function(){
+gulp.task("symbols", function() {
   return gulp.src("build/img/icons/*.svg")
     .pipe(svgmin())
     .pipe(svgstore({

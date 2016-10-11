@@ -35,7 +35,7 @@
             <picture>
               <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img src="img/logo-mobile.svg" alt="Интернет магазин Мишка">
+              <img src="img/logo-mobile.svg" width="86" height="36" alt="Интернет магазин Мишка">
             </picture>
           </a>
           <ul class="main-nav__list">
@@ -61,47 +61,53 @@
       <section class="main-catalog">
         <div class="main-catalog__wrapper">
           <article class="catalog-item">
-            <a class="catalog-item__img" href="#">
+            <a href="#">
               <picture>
                 <source media="(min-width: 1150px)" srcset="img/photo-1-desktop@1x.jpg, img/photo-1-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg, img/photo-1-tablet@2x.jpg 2x">
-                <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Зайчик попрыгайка">
+                <img class="catalog-item__img" src="img/photo-1-mobile@1x.jpg" width="260" height="195" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Зайчик попрыгайка">
               </picture>
             </a>
-            <h2 class="catalog-item__title"><a href="#">Зайчик-попрыгайчик</a></h2>
-            <span class="catalog-item__description">Рост 30 см, вес 200 г</span>
-            <span class="catalog-item__price"><a class="modal-form__link" href="#">1 200 руб.</a></span>
+            <div class="catalog-item__content">
+              <h2 class="catalog-item__title"><a href="#">Зайчик-попрыгайчик</a></h2>
+              <span class="catalog-item__description">Рост 30 см, вес 200 г</span>
+              <span class="catalog-item__price"><a class="modal-form__link" href="#">1 200 руб.</a></span>
+            </div>
           </article>
           <article class="catalog-item">
-            <a class="catalog-item__img" href="#">
+            <a href="#">
               <picture>
                 <source media="(min-width: 1150px)" srcset="img/photo-2-desktop@1x.jpg, img/photo-2-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg, img/photo-2-tablet@2x.jpg 2x">
-                <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Зайчик попрыгайка">
+                <img class="catalog-item__img" src="img/photo-2-mobile@1x.jpg" width="260" height="195" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Зайчик попрыгайка">
               </picture>
             </a>
-            <h2 class="catalog-item__title"><a href="#">Корзинка для белья</a></h2>
-            <span class="catalog-item__description">Диаметр 15 см, высота 10 см</span>
-            <span class="catalog-item__price"><a class="modal-form__link" href="#">690 руб.</a></span>
+            <div class="catalog-item__content">
+              <h2 class="catalog-item__title"><a href="#">Корзинка для белья</a></h2>
+              <span class="catalog-item__description">Диаметр 15 см, высота 10 см</span>
+              <span class="catalog-item__price"><a class="modal-form__link" href="#">690 руб.</a></span>
+            </div>
           </article>
           <article class="catalog-item">
-            <a class="catalog-item__img" href="#">
+            <a href="#">
               <picture>
                 <source media="(min-width: 1150px)" srcset="img/photo-3-desktop@1x.jpg, img/photo-3-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg, img/photo-3-tablet@2x.jpg 2x">
-                <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Зайчик попрыгайка">
+                <img class="catalog-item__img" src="img/photo-3-mobile@1x.jpg" width="260" height="195" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Зайчик попрыгайка">
               </picture>
             </a>
-            <h2 class="catalog-item__title"><a href="#">Большая корзинка<br>для игрушек</a></h2>
-            <span class="catalog-item__description">Диаметр 30 см, высота 30 см</span>
-            <span class="catalog-item__price"><a class="modal-form__link" href="#">1 500 руб.</a></span>
+            <div class="catalog-item__content">
+              <h2 class="catalog-item__title"><a href="#">Большая корзинка<br>для игрушек</a></h2>
+              <span class="catalog-item__description">Диаметр 30 см, высота 30 см</span>
+              <span class="catalog-item__price"><a class="modal-form__link" href="#">1 500 руб.</a></span>
+            </div>
           </article>
         </div>
       </section>
       <section class="video-factory">
         <h2 class="video-factory__title">Процесс производства</h2>
         <video class="video-factory__video">
-          <source src="#" type="mimetype">
+          <source src="#" type="video/mp4">
         </video>
         <p class="video-factory__description">
           По просьбам наших любимых фолловеров мы сняли для
@@ -137,9 +143,9 @@
     <div class="modal-wrapper">
       <div class="modal-form">
         <form class="modal-form__select" action="#" method="get">
-          <span class="modal-form__title">Добавить в корзину</span>
-          <span class="modal-form__action">Выбирите размер:</span>
-          <div>
+          <div class="modal-form__title">Добавить в корзину</div>
+          <div class="modal-form__action">Выбирите размер:</div>
+          <div class="modal-form__select">
             <input id="small" type="radio" name="select" value="small" checked>
             <label for="small">S</label>
             <input id="medium" type="radio" name="select" value="medium">

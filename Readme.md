@@ -52,4 +52,4 @@ git clone SSH-адрес_вашего_форка
 [travis-url]: https://travis-ci.org/htmlacademy-adaptive/196724-mishka
 [dependency-image]: https://david-dm.org/htmlacademy-adaptive/196724-mishka.svg?style=flat-square
 [dependency-url]: https://david-dm.org/htmlacademy-adaptive/196724-mishka
-"Готово к финальной проверке"
+"Готов к финальной проверки"
