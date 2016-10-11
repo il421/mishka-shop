@@ -8,7 +8,7 @@
   .container();
 };
 
-.main-nav__logo {
+.main-nav__logo-img {
   display: block;
 
   width: 86px;
@@ -250,15 +250,12 @@
     height: 150px;
   };
 
-  .main-nav__logo {
-    width: 109px;
-    height: 46px;
+  .main-nav__logo-img {
+    width: 113px;
+    height: 49px;
     margin: 0;
-    margin-left: 50px;
+    margin-left: 48px;
     margin-top: 20px;
-
-    background:  no-repeat;
-    background-position: center;
 
     order: 1;
   };
@@ -359,7 +356,8 @@
 
   .main-nav__item--chart {
     &::before {
-      top: 30px;
+      top: 33px;
+      right: 30px;
     };
   };
 
@@ -377,13 +375,15 @@
 
 @media @desktop-widths {
   .main-nav__logo {
+    order: 2;
+  };
+
+  .main-nav__logo-img {
     width: 150px;
     height: 73px;
     margin: 0;
-    margin-top: 10px;
+    margin-top: 7px;
     margin-left: 0;
-
-    order: 2;
   };
 
   .main-nav__list {
@@ -393,19 +393,12 @@
   };
 
   .main-nav__user-items {
-    margin-left: 60px;
+    margin-left: 65px;
     order: 3;
   };
 
   .main-nav__item--catalog {
     margin: 0;
-  };
-
-  .main-nav__item--catalog a {
-    margin: 0;
-    padding-right: 32px;
-
-    border-right: 1px solid @line-border-color;
   };
 
   .main-nav__item--knitting a {
@@ -421,7 +414,7 @@
 
   .main-nav__item--catalog a {
     margin: 0;
-    padding-right: 32px;
+    padding-right: 35px;
 
     border-right: 1px solid @line-border-color;
   };

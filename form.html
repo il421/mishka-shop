@@ -35,7 +35,7 @@
             <picture>
               <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img src="img/logo-mobile.svg" width="86" height="36" alt="Интернет магазин Мишка">
+              <img src="img/logo-mobile.svg" class="main-nav__logo-img" width="86" height="36" alt="Интернет магазин Мишка">
             </picture>
           </a>
           <ul class="main-nav__list">
@@ -95,15 +95,15 @@
             <fieldset class="form-section">
               <legend class="form-section__title">ФИО</legend>
               <div class="form-section__name">
-                <div>
+                <div class="form-section__name-wrapper">
                   <label for="first-name">Имя:</label>
                   <input type="text" name="first-name" id="first-name" placeholder="Введите ваше имя" required>
                 </div>
-                <div>
+                <div class="form-section__name-wrapper">
                   <label for="last-name">Фамилия:</label>
                   <input type="text" name="last-name" id="last-name" placeholder="Укажите фамилию" required>
                 </div>
-                <div>
+                <div class="form-section__name-wrapper">
                   <label for="middle-name">Отчество:</label>
                   <input type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете" required>
                 </div>
