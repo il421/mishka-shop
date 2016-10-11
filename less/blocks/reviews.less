@@ -114,21 +114,32 @@
 
 @media @desktop-widths {
   .reviews {
-    margin-right: 50px;
-    margin-left: 150px;
     margin-top: 87px;
-    background-size: 350px 460px
+    background: none;
   };
 
   .reviews__wrapper {
     padding: 0;
-    margin-left: 170px;
-    margin-right: 50px;
     padding-top: 70px;
+    margin: 0 50px;
+    min-height: 390px;
+
+    background: url("../img/review@1x.jpg") no-repeat @main-background-color;
+    background-position: left;
+    background-size: 350px 457px;
+
+    @media (min-width: 768px) {
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background: url("../img/review@2x.jpg") no-repeat @main-background-color;
+        background-position: left;
+        background-size: contain;
+      };
+    };
   };
 
   .reviews__title {
     margin: 0;
+    margin-left: 170px;
 
     .black-title-text-desktop;
 
@@ -141,6 +152,7 @@
     margin: 0;
     margin-top: 45px;
     margin-bottom: 35px;
+    margin-left: 173px;
 
     font-size: 17px;
 
@@ -149,7 +161,7 @@
 
   .reviews__write {
     width: 171px;
-    margin-right: 50px;
+    margin-right: 0;
     margin-top: 10px;
 
     order: 2;
@@ -157,6 +169,7 @@
 
   .reviews__auhor-name {
     margin: 0;
+    margin-left: 173px;
 
     font-size: 17px;
 

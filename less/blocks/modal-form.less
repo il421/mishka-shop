@@ -31,7 +31,6 @@
 };
 
 .modal-form__title {
-  display: inline-block;
   margin: 0 80px;
   margin-top: 50px;
 
@@ -42,7 +41,6 @@
 };
 
 .modal-form__action {
-  display: inline-block;
   margin-bottom: 30px;
 };
 
@@ -66,7 +64,7 @@
   color: @white-text-color;
 };
 
-.modal-form__select div {
+.modal-form__select-size {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -74,11 +72,11 @@
   width: 260px;
 };
 
-.modal-form__select input[type="radio"] {
+.modal-form__select-size input[type="radio"] {
   display: none;
 };
 
-.modal-form__select label {
+.modal-form__select-size label {
   position: relative;
 
   .black-bold-text;
@@ -99,11 +97,11 @@
   };
 };
 
-.modal-form__select label:hover::before {
+.modal-form__select-size label:hover::before {
   border-color: @text-hover-active;
 };
 
-.modal-form__select input[type="radio"]:checked + label::before {
+.modal-form__select-size input[type="radio"]:checked + label::before {
   border-color: @blue-text-color;
 };
 
@@ -124,7 +122,6 @@
   };
 
   .modal-form__action {
-    display: inline-block;
     margin-bottom: 30px;
 
     font-size: 17px;
@@ -138,15 +135,15 @@
     text-align: center;
   };
 
-  .modal-form__select div {
+  .modal-form__select-size {
     width: 350px;
   };
 
-  .modal-form__select input[type="radio"] {
+  .modal-form__select-size input[type="radio"] {
     display: none;
   };
 
-  .modal-form__select label {
+  .modal-form__select-size label {
     position: relative;
 
     .black-bold-text;
@@ -167,11 +164,11 @@
     };
   };
 
-  .modal-form__select label:hover::before {
+  .modal-form__select-size label:hover::before {
     border-color: @text-hover-active;
   };
 
-  .modal-form__select input[type="radio"]:checked + label::before {
+  .modal-form__select-size input[type="radio"]:checked + label::before {
     border-color: @blue-text-color;
   };
 };
