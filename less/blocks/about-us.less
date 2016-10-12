@@ -1,11 +1,27 @@
 .about-us {
+  position: relative;
+
   .container();
   margin-top: 25px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: -26px;
+    width: 320px;
+    height: 6px;
+
+    background: url(../img/bg-zigzag-line.svg) repeat;
+    background-size: contain;
+    background-position: center;
+    transform: rotate(180deg);
+  };
 };
 
 .about-us__title {
   margin-left: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
+  padding-top: 7px;
 
   .black-title-text;
 };
@@ -15,12 +31,12 @@
   flex-direction: column;
   justify-content: space-between;
 
-  height: 710px;
+  height: 705px;
   margin: 0 30px;
   padding: 0;
 
   list-style: none;
-  };
+};
 
 .about-us__item {
   position: relative;
@@ -30,7 +46,7 @@
 
   text-align: left;
   .black-bold-text;
-  line-height: auto;
+  line-height: 20px;
 
   &::before {
     position: absolute;
@@ -72,51 +88,68 @@
 };
 
 @media @tablet-widths {
+  .about-us {
+    margin-top: 0;
+
+    &::after {
+      top: -65px;
+      width: 768px;
+      height: 15px;
+    };
+  };
+
   .about-us__title {
-    margin-left: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding: 0;
+    margin-left: 46px;
+    margin-top: 65px;
+    margin-bottom: 45px;
 
     .black-title-text-tablet;
   };
 
   .about-us__list {
-    display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content:  flex-start;
-    height: 435px;
+    align-content: space-between;
+    height: 411px;
+    width: 625px;
     margin-left: 50px;
     };
 
   .about-us__item {
-    margin-right: 100px;
-    margin-bottom: 25px;
+    margin: 0;
+    padding-top: 55px;
 
     font-size: 20px;
+    line-height: 24px;
   };
 };
 
 
 @media @desktop-widths {
   .about-us {
-    height: 600px;
-    margin-top: 0;
+
+    &::after {
+      top: -85px;
+      width: 1150px;
+      height: 23px;
+
+      transform: rotate(0deg);
+    };
   };
 
   .about-us__title {
     margin-top: 65px;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
     margin-left: 221px;
     .black-title-text-desktop;
   };
 
   .about-us__list {
     margin: 0 225px;
+    width: 645px;
   };
 
   .about-us__item {
-    margin-right: 120px;
   };
 };
