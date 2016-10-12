@@ -1,11 +1,27 @@
 .about-us {
+  position: relative;
+
   .container();
   margin-top: 25px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: -26px;
+    width: 320px;
+    height: 6px;
+
+    background: url(../img/bg-zigzag-line.svg) repeat;
+    background-size: contain;
+    background-position: center;
+    transform: rotate(180deg);
+  };
 };
 
 .about-us__title {
   margin-left: 30px;
   margin-bottom: 35px;
+  padding-top: 7px;
 
   .black-title-text;
 };
@@ -20,7 +36,7 @@
   padding: 0;
 
   list-style: none;
-  };
+};
 
 .about-us__item {
   position: relative;
@@ -72,9 +88,20 @@
 };
 
 @media @tablet-widths {
+  .about-us {
+    margin-top: 0;
+
+    &::after {
+      top: -65px;
+      width: 768px;
+      height: 15px;
+    };
+  };
+
   .about-us__title {
+    padding: 0;
     margin-left: 46px;
-    margin-top: 50px;
+    margin-top: 65px;
     margin-bottom: 45px;
 
     .black-title-text-tablet;
@@ -101,7 +128,14 @@
 
 @media @desktop-widths {
   .about-us {
-    margin-top: 0;
+
+    &::after {
+      top: -85px;
+      width: 1150px;
+      height: 23px;
+
+      transform: rotate(0deg);
+    };
   };
 
   .about-us__title {

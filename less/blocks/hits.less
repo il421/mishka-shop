@@ -1,11 +1,7 @@
 .hits {
   .container();
-
-  border-bottom: 7px solid transparent;
-  border-image-source: url("../img/bg-zigzag-line.svg");
-  border-image-slice:  100;
-  border-image-repeat: round;
 };
+
 
 .hits__wrapper {
   display: flex;
@@ -36,7 +32,7 @@
 
 .hits__options {
   margin: 0 30px;
-  margin-top: 21px;
+  margin-top: 20px;
 };
 
 .hits__options tr {
@@ -44,7 +40,7 @@
 };
 
 .hits__options td {
-  padding: 7px 30px 7px 0;
+  padding: 7px 28px 7px 0;
 };
 
 .hits__picture {
@@ -68,11 +64,9 @@
 
 @media @tablet-widths {
   .hits {
-    min-height: 550px;
-
-    border-bottom: 16px solid transparent;
-    border-image-slice:  25;
     position: relative;
+
+    min-height: 575px;
   };
 
   .hits__wrapper {
