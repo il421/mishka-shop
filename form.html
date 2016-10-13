@@ -158,6 +158,15 @@
         </div>
       </div>
     </footer>
-  <script src="js/script.js"></script>
+    <script>
+      var submit = document.querySelector(".form-order__submit");
+      var invalidList = document.querySelectorAll(".form-section__check");
+
+      submit.addEventListener("click", function(event) {
+        for (index = 0; index < invalidList.length; index++) {
+        invalidList[index].classList.add("form-section__submitting")
+        }
+      });
+      </script>
   </body>
 </html>

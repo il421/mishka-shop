@@ -1,16 +1,16 @@
 /*Menu*/
-var navMain = document.querySelector('.main-nav');
-var navToggle = document.querySelector('.main-nav__toggle');
+var navMain = document.querySelector(".main-nav");
+var navToggle = document.querySelector(".main-nav__toggle");
 
-navMain.classList.remove('main-nav--nojs');
+navMain.classList.remove("main-nav--nojs");
 
-navToggle.addEventListener('click', function() {
-  if (navMain.classList.contains('main-nav--closed')) {
-    navMain.classList.remove('main-nav--closed');
-    navMain.classList.add('main-nav--opened');
+navToggle.addEventListener("click", function() {
+  if (navMain.classList.contains("main-nav--closed")) {
+    navMain.classList.remove("main-nav--closed");
+    navMain.classList.add("main-nav--opened");
   } else {
-    navMain.classList.add('main-nav--closed');
-    navMain.classList.remove('main-nav--opened');
+    navMain.classList.add("main-nav--closed");
+    navMain.classList.remove("main-nav--opened");
   }
 });
 
@@ -36,9 +36,10 @@ window.addEventListener("keydown", function(event) {
 
 /*Invalid status*/
 var submit = document.querySelector(".form-order__submit");
-var invalid = document.querySelector(".form-section__check");
+var invalidList = document.querySelectorAll(".form-section__check");
 
 submit.addEventListener("click", function(event) {
-  event.preventDefault();
-  invalid.classList.add("form-section__submitting");
+  for (index = 0; index < invalidList.length; index++) {
+  invalidList[index].classList.add("form-section__submitting")
+  }
 });
