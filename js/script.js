@@ -33,3 +33,12 @@ window.addEventListener("keydown", function(event) {
     }
   }
 });
+
+/*Invalid status*/
+var submit = document.querySelector(".form-order__submit");
+var invalid = document.querySelector(".form-section__check");
+
+submit.addEventListener("click", function(event) {
+  event.preventDefault();
+  invalid.classList.add("form-section__submitting");
+});

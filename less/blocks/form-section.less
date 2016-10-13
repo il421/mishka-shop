@@ -83,7 +83,7 @@
 };
 
 .form-section__type label:last-child::after {
-  top: -10px;
+  top: -15px;
 };
 
 .form-section__type label:hover::after {
@@ -106,6 +106,10 @@
   border: 5px solid @blue-text-color;
   border-radius: 50%;
   background: @blue-text-color;
+};
+
+.form-section__type input:checked + label:last-child::before {
+  top: -3px;
 };
 
 .form-section__color label::after {
@@ -190,12 +194,6 @@
   border-bottom: 2px solid @blue-text-color;
 };
 
-.form-section__name input:invalid,
-.form-section__phone input:invalid,
-.form-section__email input:invalid {
-  border-bottom: 2px solid @text-invalid;
-};
-
 .form-section__extra textarea:hover {
   border: 2px solid @blue-text-color;
 };
@@ -205,6 +203,10 @@
 };
 
 .form-section__extra textarea:invalid {
+  border: 2px solid @text-invalid;
+};
+
+.form-section__submitting:invalid {
   border: 2px solid @text-invalid;
 };
 
