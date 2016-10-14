@@ -2,7 +2,9 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   .container();
+  height: 216px;
 
   z-index: 100;
 };
@@ -23,8 +25,8 @@
   position: relative;
 
   display: block;
-  padding-top: 28px;
-  padding-bottom: 27px;
+  padding-top: 26px;
+  padding-bottom: 29px;
   padding-right: 185px;
   padding-left: 30px;
 
@@ -42,7 +44,7 @@
 .extra-nav__block--dark a::before {
   position: absolute;
   content: "";
-  top: 25px;
+  top: 20px;
   right: 10px;
 
   width: 65px;
@@ -73,6 +75,10 @@
 };
 
 .extra-nav__block--dark a:hover::before {
+  top: 25px;
+};
+
+.extra-nav__block--light a:hover::before {
   top: 25px;
 };
 
@@ -133,6 +139,10 @@
   };
 
   .extra-nav__block--dark a:hover::before {
+    top: 35px;
+  };
+
+  .extra-nav__block--light a:hover::before {
     top: 35px;
   };
 };
