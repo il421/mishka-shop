@@ -1,11 +1,10 @@
 .main-nav {
   position: relative;
-
-  background-color: @main-background-color;
 };
 
 .main-nav__wrapper {
   .container();
+
 };
 
 .main-nav__logo-img {
@@ -43,7 +42,7 @@
 
   cursor: pointer;
 
-  z-index: 400;
+  z-index: 600;
 };
 
 .main-nav--closed .main-nav__toggle {
@@ -203,7 +202,7 @@
 
     height: 80vh;
 
-    z-index: 200;
+    z-index: 500;
   };
 
   .main-nav--opened .main-nav__wrapper::before {
@@ -239,7 +238,8 @@
 
 @media @tablet-widths {
   .main-nav__wrapper {
-    position: static;
+    position: relative;
+
 
     display: flex;
     flex-direction:row;
@@ -276,9 +276,11 @@
   .main-nav__user-items,
   .main-nav__stock,
   .main-nav__shipping {
-    position: static;
+    position: relative;
 
     margin: 0;
+
+    background-color: transparent;
 
     z-index: 200;
   };
@@ -296,8 +298,6 @@
   .main-nav__list {
     width: 334px;
     margin-left: 50px;
-
-    background-color: transparent;
 
     order: 3;
   };

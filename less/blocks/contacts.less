@@ -9,12 +9,11 @@
     content: "";
     top: 0px;
     width: 320px;
-    height: 6px;
+    height: 7px;
 
     background: url(../img/bg-zigzag-line.svg) repeat;
-    background-size: contain;
+    background-size: 320px 100%;
     background-position: center;
-    transform: rotate(180deg);
   };
 };
 
@@ -100,8 +99,8 @@
 
 .contacts__write {
   width: 258px;
-  margin: 39px 30px;
-  padding: 16px 0;
+  margin: 40px 30px;
+  padding: 15px 0;
 };
 
 
@@ -113,7 +112,9 @@
     &::after {
       top: -10px;
       width: 768px;
-      height: 15px;
+      height: 16px;
+
+      background-size: 768px 100%;
     };
   };
 
@@ -182,7 +183,7 @@
 
 @media @desktop-widths {
   .contacts {
-    height: 640px;
+    min-height: 643px;
     margin-top: 0;
 
     &::after {
@@ -190,7 +191,7 @@
       width: 1150px;
       height: 23px;
 
-      transform: rotate(0deg);
+      background-size: 1150px 100%;
     };
   };
 
@@ -260,7 +261,7 @@
 
   .contacts__write {
     margin: 0;
-    margin-top: 78px;
+    margin-top: 81px;
     margin-left: 225px;
 
     order: 3;

@@ -1,16 +1,16 @@
 /*Menu*/
-var navMain = document.querySelector('.main-nav');
-var navToggle = document.querySelector('.main-nav__toggle');
+var navMain = document.querySelector(".main-nav");
+var navToggle = document.querySelector(".main-nav__toggle");
 
-navMain.classList.remove('main-nav--nojs');
+navMain.classList.remove("main-nav--nojs");
 
-navToggle.addEventListener('click', function() {
-  if (navMain.classList.contains('main-nav--closed')) {
-    navMain.classList.remove('main-nav--closed');
-    navMain.classList.add('main-nav--opened');
+navToggle.addEventListener("click", function() {
+  if (navMain.classList.contains("main-nav--closed")) {
+    navMain.classList.remove("main-nav--closed");
+    navMain.classList.add("main-nav--opened");
   } else {
-    navMain.classList.add('main-nav--closed');
-    navMain.classList.remove('main-nav--opened');
+    navMain.classList.add("main-nav--closed");
+    navMain.classList.remove("main-nav--opened");
   }
 });
 
@@ -19,11 +19,13 @@ var link = document.querySelector(".modal-form__link");
 var popup = document.querySelector(".modal-form");
 var bg = document.querySelector(".modal-wrapper");
 
-link.addEventListener("click", function(event) {
-  event.preventDefault();
-  popup.classList.add("modal-form--show");
-  bg.classList.add("modal-wrapper--show");
-});
+if (link) {
+  link.addEventListener("click", function(event) {
+    event.preventDefault();
+    popup.classList.add("modal-form--show");
+    bg.classList.add("modal-wrapper--show");
+  })
+};
 
 window.addEventListener("keydown", function(event) {
   if (event.keyCode === 27) {
@@ -33,3 +35,15 @@ window.addEventListener("keydown", function(event) {
     }
   }
 });
+
+/*Invalid status*/
+var submit = document.querySelector(".form-order__submit");
+var invalidList = document.querySelectorAll(".form-section__check");
+
+if (submit) {
+  submit.addEventListener("click", function(event) {
+    for (index = 0; index < invalidList.length; index++) {
+      invalidList[index].classList.add("form-section__submitting")
+    }
+  })
+};

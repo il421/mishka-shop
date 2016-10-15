@@ -13,11 +13,11 @@
 };
 
 .video-factory:hover {
-  box-shadow: 0 10px 20px -2px @text-hover-active;
+  box-shadow: 0 5px 10px -2px @text-hover-active;
 };
 
 .video-factory:active {
-  box-shadow: 0 5px 10px -2px @text-hover-active;
+  box-shadow: 0 3px 5px -2px @text-hover-active;
 };
 
 .video-factory__title {
@@ -63,7 +63,7 @@
   };
 };
 
-.video-factory .video-factory__play {
+.video-factory__play {
     position: absolute;
     content: "";
     top: 138px;
@@ -75,6 +75,8 @@
     border: none;
     background: url("../img/icon-play.svg") no-repeat;
     background-position: center;
+
+    z-index: 100;
 };
 
 .video-factory .video-factory__play:hover {
@@ -172,7 +174,7 @@
     align-content: flex-start;
     width: 1050px;
     height: 454px;
-    margin-top: 55px;
+    margin-top: 5px;
     margin-bottom: 105px;
   };
 
