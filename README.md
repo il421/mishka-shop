@@ -3,6 +3,6 @@ A part of a project. Used HTML, CSSS, LESS. The project is responsive/adaptive. 
 
 In order to run:
 
-npm install
-npm -g install gulp-cli
+npm install__
+npm -g install gulp-cli__
 npm run build && gulp serve
