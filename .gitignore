@@ -4,7 +4,7 @@
 *.log
 *.pdf
 *.psd
-build/
+# build/
 css/*.css
 node_modules/
 Thumbs.db
