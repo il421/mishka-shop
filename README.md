@@ -1,6 +1,6 @@
 # mishka
 A part of a project. 
-I was responsable for some pages. Used HTML, CSS, LESS. The project is responsive/adaptive. 
+I was responsable for some pages. Used HTML, CSS, LESS. The project is responsive/adaptive.<br /> 
 !!! All images loads according to a screen resolution.
 
 In order to run:
