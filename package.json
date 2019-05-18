@@ -6,12 +6,8 @@
   "author": "Ilya Suglobov",
   "repository": {
     "type": "git",
-    "url": "git@github.com:htmlacademy-adaptive/196724-mishka.git"
+    "url": ""
   },
-  "bugs": {
-    "url": "https://github.com/htmlacademy-adaptive/196724-mishka/issues"
-  },
-  "homepage": "https://github.com/htmlacademy-adaptive/196724-mishka",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "0.0.7",
     "autoprefixer": "6.4.1",
@@ -35,7 +31,8 @@
   "scripts": {
     "test": "editorconfig-cli",
     "build": "gulp build",
-    "start": "run build && gulp serve"
+    "start": "run build && gulp serve",
+    "deploy": "gh-pages -d build"
   },
   "editorconfig-cli": [
     "*.html",
@@ -49,6 +46,7 @@
     "node": "6.5"
   },
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "gulp-cli": "^2.0.1"
   }
 }
